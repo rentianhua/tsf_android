@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    
+      <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ee3a43" >
+
+        <TextView
+            android:id="@+id/tv_agentpersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5dp"
+            android:text="成交房源"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_back_agentchengjiao"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView1"
+                android:src="@drawable/white_left" />
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+    
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+           android:layout_below="@+id/rl_title"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_chengjiao_control"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/chengjiao_ershou"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="二手房"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/chengjiao_zufang"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="租房"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+    
+        <Button
+            android:id="@+id/btn_line"
+            android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+            android:layout_below="@+id/ll_title"
+            android:background="#c9c9cb" />
+
+        <com.dumu.housego.util.NoScrollViewPager
+            android:id="@+id/chengjiao_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_line" >
+        </com.dumu.housego.util.NoScrollViewPager>
+    
+
+</RelativeLayout>

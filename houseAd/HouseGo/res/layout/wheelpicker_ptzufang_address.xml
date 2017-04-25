@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.dumu.housego"
+    android:id="@+id/parent_wheel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent"
+    tools:ignore="HardcodedText,RtlSymmetry,RtlHardcoded,ObsoleteLayoutParam,UselessParent" >
+
+    <LinearLayout
+        android:id="@+id/ll_pop_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_wheelPicker"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:text="取消" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="选择" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:padding="10dp"
+                android:paddingRight="15dp"
+                android:text="确定" />
+        </RelativeLayout>
+        
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c9c9cb" />
+
+        <LinearLayout
+            
+            android:id="@+id/ll_wheelPicker"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+              android:background="#fff"
+            android:orientation="horizontal" >
+
+          <TextView 
+                   android:id="@+id/wp_a"
+                   android:text="awdasfsd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+              />
+
+        
+            <com.aigestudio.wheelpicker.view.WheelPicker
+                android:id="@+id/wp_b"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                
+                android:layout_height="match_parent" />
+            <com.aigestudio.wheelpicker.view.WheelPicker
+                
+                android:id="@+id/wp_c"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    
+
+</RelativeLayout>

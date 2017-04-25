@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+ android:layout_height="220dp"    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_marke_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:text="嘉鑫阳光雅居" />
+
+        <TextView
+            android:id="@+id/tv_marke_housecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:layout_toRightOf="@+id/tv_marke_title"
+            android:text="在售1套房源" />
+        
+        <TextView 
+            android:id="@+id/tv_marke_canle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收起" 
+            android:layout_marginRight="5dp"   
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:layout_alignParentRight="true"
+            />
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_marke_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+    
+
+</LinearLayout>

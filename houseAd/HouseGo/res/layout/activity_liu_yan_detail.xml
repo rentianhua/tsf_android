@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dumu.housego.LiuYanDetailActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ee3a43" >
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5dp"
+            android:text="吴老二"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+      
+
+        <ImageView
+            android:id="@+id/liuyandetail_back"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ll_back_login"
+            android:src="@drawable/white_left" />
+
+    </RelativeLayout>
+    
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_liuyandetail"
+        android:layout_below="@+id/rl_title"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_above="@+id/ll_edit"
+        ></ListView>
+    
+    
+    <LinearLayout 
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp"
+        android:background="#f0eff5"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        >
+        <EditText 
+            android:id="@+id/et_edit_liuyan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/conusertextcolor"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:background="@drawable/shap_liuyan_edittext"
+            android:layout_marginRight="10dp"
+            android:paddingRight="3dp"
+            />
+        
+        <TextView 
+           android:id="@+id/tv_send_liuyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_gravity="center"
+            android:textColor="@color/conusertextcolor"
+            android:textSize="14sp"
+            
+            />
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>

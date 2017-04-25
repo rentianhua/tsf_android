@@ -1,0 +1,622 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dumu.housego.AgentDetailActivity"
+    tools:ignore="HardcodedText,RtlHardcoded,ContentDescription,UselessParent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_new_house_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e12442" >
+
+        <LinearLayout
+            android:id="@+id/ll_agentdetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/white_left" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_new_house_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="经纪人详情"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <com.dumu.housego.util.MyReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="#f0eff5"
+        android:layout_below="@+id/rl_new_house_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 框內內容，scrollView -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+              >
+
+                <ImageView
+                    android:id="@+id/circleImageView1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/agent1" />
+
+                <TextView
+                    android:id="@+id/tv_agent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/circleImageView1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/circleImageView1"
+                    android:text="胡歌" />
+
+                <TextView
+                    android:id="@+id/tv_agent_dengji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_agent_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tv_agent_name"
+                    android:text="资深经纪人"
+                    android:textColor="#ff0000" />
+
+                <TextView
+                    android:id="@+id/tv_agent_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_agent_name"
+                    android:layout_below="@+id/tv_agent_name"
+                    android:layout_marginTop="5dp"
+                    android:text="主营区域:"
+                    android:textColor="#b1b4b5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_mainarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_agent_year"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tv_agent_year"
+                    android:text="主营区域"
+                    android:textColor="#b1b4b5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_vtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_agent_year"
+                    android:layout_below="@+id/tv_agent_year"
+                    android:layout_marginTop="5dp"
+                    android:text="4008560008转20001"
+                    android:textColor="#b1b4b5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_biaoqian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_agent_vtel"
+                    android:layout_below="@+id/tv_agent_vtel"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_textview_biaoqian1"
+                    android:padding="1dp"
+                    android:paddingBottom="10dp"
+                    android:text="客户热评"
+                    android:textColor="#f4c600"
+                    android:visibility="gone"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_biaoqian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_agent_biaoqian"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/tv_agent_biaoqian"
+                    android:background="@drawable/shape_textview_biaoqian2"
+                    android:padding="1dp"
+                    android:text="房东信赖"
+                           android:visibility="gone"
+                    android:textColor="#11cd6e"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_biaoqian3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_agent_biaoqian2"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/tv_agent_biaoqian2"
+                    android:background="@drawable/shape_textview_biaoqian3"
+                    android:padding="1dp"
+                    android:text="房东信赖"
+                           android:visibility="gone"
+                    android:textColor="#ea8010"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_biaoqian4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_agent_biaoqian3"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/tv_agent_biaoqian3"
+                    android:background="@drawable/shape_textview_biaoqian4"
+                    android:padding="1dp"
+                    android:singleLine="true"
+                    android:text="房东信赖"
+                           android:visibility="gone"
+                    android:textColor="#328fca"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="10dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:background="#fff"
+                 >
+
+                <TextView
+                    android:id="@+id/tv_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="从业年限:" />
+
+                <TextView
+                    android:id="@+id/tv_agent_worktime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_work"
+                    android:layout_toRightOf="@+id/tv_work"
+                    android:text="1-2年"
+                    android:textColor="#b1b4b5" />
+
+                <TextView
+                    android:id="@+id/tv_mianarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_work"
+                    android:layout_below="@+id/tv_work"
+                    android:layout_marginTop="10dp"
+                    android:text="主营区域:" />
+
+                <TextView
+                    android:id="@+id/tv_agent_mianarea2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_mianarea"
+                    android:layout_toRightOf="@+id/tv_mianarea"
+                    android:text="龙华新区,东莞"
+                    android:textColor="#b1b4b5" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_work"
+                    android:layout_below="@+id/tv_mianarea"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:text="所属公司:" />
+
+                <TextView
+                    android:id="@+id/tv_agent_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_company"
+                    android:layout_toRightOf="@+id/tv_company"
+                    android:singleLine="true"
+                    android:text="瑞安兴业"
+                    android:textColor="#b1b4b5" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="10dp"
+                android:background="#c9c9cb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_agent_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="30"
+                        android:textColor="#ff0000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_agent_history"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="历史成交"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_agent_pingjunzhouqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="30"
+                        android:textColor="#ff0000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_agent_pingjunzhouqi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="独家委托"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_agent_sanshiday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="30"
+                        android:textColor="#ff0000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_agent_sanshiday"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="近30天带看(次)"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_agent_yonghupingjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="Ta的评价"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/bianjipinglun" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+            
+			<LinearLayout 
+			    android:id="@+id/pinglun_youshuju"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="#fff"
+			    android:orientation="vertical">
+            <com.dumu.housego.util.ListViewForScrollView 
+                android:id="@+id/lv_agent_pinglun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </com.dumu.housego.util.ListViewForScrollView>
+              <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+              
+             <TextView 
+                 android:id="@+id/tv_agent_morepinglun"
+                 android:layout_marginTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="查看更多"
+                   android:paddingLeft="60dp"
+                  android:layout_gravity="center"
+                   android:paddingRight="60dp"
+                   android:paddingTop="6dp"
+                   android:paddingBottom="6dp"
+                   android:textColor="#ff0000"
+                   android:background="@drawable/shape_textview_more"
+                   />
+                <TextView 
+                 android:background="#fff"
+			        android:layout_width="match_parent"
+			        android:layout_height="10dp"
+			        />  
+            </LinearLayout>
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/pinglun_wushuju"
+			    android:orientation="vertical"
+			     android:visibility="gone"
+			    >
+			  <TextView 
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content"
+			      android:text="暂无数据"
+			      android:padding="25dp"
+			      android:textSize="14sp"
+			      android:gravity="center"
+			           android:background="#fff"
+			      android:textColor="#b1b4b5"
+			      />  
+			 
+			    
+			</LinearLayout>
+               <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="15dp"
+			        />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                 android:background="#fff"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_agent_chengjiaofangyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="成交房源"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            
+            
+            
+            
+               <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+	<LinearLayout 
+			    android:id="@+id/chengjiaofangyuan_youshuju"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="#fff"
+			     android:visibility="gone"
+			    android:orientation="vertical">
+            <com.dumu.housego.util.ListViewForScrollView 
+                android:id="@+id/lv_agent_chengjiaofangyuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </com.dumu.housego.util.ListViewForScrollView>
+              <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+              
+             <TextView 
+                 android:id="@+id/tv_agent_morechengjiaofangyuan"
+                 android:layout_marginTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="查看更多"
+                   android:paddingLeft="60dp"
+                  android:layout_gravity="center"
+                   android:paddingRight="60dp"
+                 android:paddingTop="6dp"
+                   android:paddingBottom="6dp"
+                   android:textColor="#ff0000"
+                   android:background="@drawable/shape_textview_more"
+                   />
+             <TextView 
+                 android:background="#fff"
+			        android:layout_width="match_parent"
+			        android:layout_height="10dp"
+			        />  
+            </LinearLayout>
+			<LinearLayout 
+			    
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/chengjiaofangyuan_wushuju"
+			    android:orientation="vertical"
+			    >
+			  <TextView 
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content"
+			      android:text="暂无数据"
+			      android:padding="25dp"
+			      android:textSize="14sp"
+			      android:gravity="center"
+			           android:background="#fff"
+			      android:textColor="#b1b4b5"
+			      />  
+			  
+			</LinearLayout>
+              <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="15dp"
+			        />
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                 android:background="#fff"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_agent_ershoufangyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="二手房源"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            
+            
+            
+            
+               <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <LinearLayout 
+			    android:id="@+id/ershoufangyuan_youshuju"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="#fff"
+			    android:orientation="vertical">
+            <com.dumu.housego.util.ListViewForScrollView 
+                android:id="@+id/lv_agent_ershoufangyuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </com.dumu.housego.util.ListViewForScrollView>
+              <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+              
+             <TextView 
+                 android:id="@+id/tv_agent_moreershoufangyuan"
+                 android:layout_marginTop="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="查看更多"
+                   android:paddingLeft="60dp"
+                  android:layout_gravity="center"
+                   android:paddingRight="60dp"
+              android:paddingTop="6dp"
+                   android:paddingBottom="6dp"
+                   android:textColor="#ff0000"
+                   android:background="@drawable/shape_textview_more"
+                   />
+                <TextView 
+                 android:background="#fff"
+			        android:layout_width="match_parent"
+			        android:layout_height="10dp"
+			        />  
+            </LinearLayout>
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/ershoufangyuan_wushuju"
+			    android:orientation="vertical"
+			    android:visibility="gone"
+			    >
+			  <TextView 
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content"
+			      android:text="暂无数据"
+			      android:padding="25dp"
+			      android:textSize="14sp"
+			      android:gravity="center"
+			           android:background="#fff"
+			      android:textColor="#b1b4b5"
+			      />  
+			  
+			</LinearLayout>
+
+			  <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="15dp"
+			        />
+            <!-- 框內內容，scrollView -->
+        </LinearLayout>
+
+    </com.dumu.housego.util.MyReboundScrollView>
+
+</RelativeLayout>

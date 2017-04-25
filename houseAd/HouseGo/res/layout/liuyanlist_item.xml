@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlHardcoded,ContentDescription,UselessParent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/liuyanlist_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/appicon60x60" />
+
+        <LinearLayout
+            android:id="@+id/llxiaoxi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            
+            android:layout_toLeftOf="@+id/iv_xiaoxidelete"
+            android:layout_toRightOf="@+id/liuyanlist_pic"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/liuyanlist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/liuyanlist_time"
+                    android:singleLine="true"
+                    android:text="王老五"
+                    android:textColor="@color/conusertextcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/liuyanlist_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/liuyanlist_name"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-12-14 12:24"
+                    android:textColor="#999"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/liuyanlist_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_yidu"
+                    android:singleLine="true"
+                    android:text="Android...dddddddddddddddddddddddddddddddddd"
+                    android:textColor="#999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_yidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="未读"
+                    android:textColor="#ee3a43"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_xiaoxidelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete_iv" />
+    </RelativeLayout>
+
+</RelativeLayout>

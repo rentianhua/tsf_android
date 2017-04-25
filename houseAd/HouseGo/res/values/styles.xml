@@ -1,0 +1,52 @@
+<resources>
+    
+    
+    <!-- 百度地图的兴趣点 -->
+		<color name="radio_baidumapcheck">#3FAC6D</color>    
+		<color name="radio_baidumapuncheck">#555555</color>    
+    
+    <!-- 新房button文字字样 -->
+    
+    <color name="newhousebuttoncheck">#ff0000</color>
+    <color name="newhousebuttonuncheck">#A9A9A9</color>
+    
+    
+    <!-- main下面的四个button选中颜色 -->
+    <color name="button_unckeck">#B5B5B5</color>
+    <color name="button_ckeck">#ED1B24</color>
+    
+    <!-- spinner-radiobutton -->
+     <color name="radio_button_check">#A9A9A9</color>
+    <color name="radio_button_uncheck">#ffffff</color>
+    
+       <!-- spinner-radiobutton -->
+     <color name="radio_buttontext_check">#fff</color>
+    <color name="radio_buttontext_uncheck">#333</color>
+    
+
+    <color name="tab_red">#ff0000</color>
+    <color name="tab_back">#ffffff</color>
+    
+    <!-- 发送验证码的框色 -->
+    <color name="send_code_rectangle">#b4b4b4</color>
+    <color name="send_code_back">#ffffff</color>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+
+</resources>

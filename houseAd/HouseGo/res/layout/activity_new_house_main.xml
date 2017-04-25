@@ -1,0 +1,304 @@
+<com.dumu.housego.util.MyReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newHouse_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dumu.housego.NewHouseMainActivity"
+    tools:ignore="ButtonStyle,TextFields,HardcodedText,RtlHardcoded,InefficientWeight,ContentDescription,LabelFor,RtlSymmetry" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         > 
+        
+    <RelativeLayout
+        android:id="@+id/rl_newhouse_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e12442" >
+
+        <ImageView
+            android:id="@+id/iv_newhouse_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/white_left" />
+
+        <LinearLayout
+            android:id="@+id/ll_newmain_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_location"
+            android:layout_toRightOf="@+id/iv_newhouse_back"
+            android:background="#6e1020"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_white_30x30" />
+
+            <TextView
+                android:id="@+id/tv_newmain_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="4.43"
+                android:background="@null"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:gravity="center|left"
+                android:text="请输入小区或商圈名"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/location_white_40x31" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_newhouse_ad"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#ffaaaaaa"
+        android:layout_height="120dp"
+        android:layout_below="@+id/rl_newhouse_title"
+        android:src="@drawable/first_back" />
+
+    <LinearLayout
+        android:id="@+id/ll_housetype1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_newhouse_ad"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/futian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="14sp"
+            android:text="福田"
+            android:textColor="#A9A9A9" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="#ffffff"
+            android:text="两居"
+            android:textColor="#A9A9A9" />
+
+        <Button
+            android:id="@+id/refined_decoration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="#ffffff"
+            android:text="精装修"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_housetype2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_housetype1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/longgang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="14sp"
+            android:text="龙岗"
+            android:textColor="#A9A9A9" />
+
+        <Button
+            android:id="@+id/tree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="三居"
+            android:textSize="14sp"
+            android:textColor="#A9A9A9" />
+
+        <Button
+            android:id="@+id/building"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="#ffffff"
+            android:text="商品房"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_housetype3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_housetype2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/luohu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="#ffffff"
+            android:text="罗湖"
+            android:textColor="#A9A9A9" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="14sp"
+            android:text="四居"
+            android:textColor="#A9A9A9" />
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="14sp"
+            android:text="全部"
+            android:textColor="#ff0000" />
+    </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+        android:id="@+id/btn_line2"
+        android:layout_width="match_parent"
+          android:layout_height="@dimen/fengexian"
+        android:layout_below="@+id/ll_housetype3"
+        android:background="#c9c9cb" />
+    <TextView
+        android:id="@+id/loushizixun"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_line2"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:text="楼市资讯"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_line"
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/fengexian"
+        android:layout_below="@+id/loushizixun"
+        android:background="#c9c9cb" />
+
+    <com.dumu.housego.util.ListViewForScrollView
+        android:id="@+id/lv_loushizixun"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_line" >
+    </com.dumu.housego.util.ListViewForScrollView>
+
+</RelativeLayout>
+	    <Button
+        android:id="@+id/btn_line3"
+        android:layout_width="match_parent"
+          android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+	    
+	    <TextView 
+               android:id="@+id/tv_newhouse_morenews"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_height="40dp"
+               android:text="查看更多"
+               android:layout_marginTop="10dp"
+               android:background="#D1D1D1"
+               android:textColor="#000000"
+               android:textSize="14sp"
+               android:gravity="center"
+               android:layout_width="match_parent"/>
+<Button
+            android:layout_marginTop="10dp"
+        android:id="@+id/btn_line4"
+        android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+<TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="热销房源"
+               android:layout_margin="10dp"
+               android:textSize="14sp"
+               android:textColor="#000000"/>
+
+  <Button 
+               android:layout_width="match_parent"
+               android:background="#c9c9cb"
+                android:layout_height="@dimen/fengexian"
+               />
+  <com.dumu.housego.util.ListViewForScrollView
+        android:id="@+id/lv_rexiaofangyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+    </com.dumu.housego.util.ListViewForScrollView>
+    
+    <Button
+        android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+	    
+	    <TextView 
+               android:id="@+id/tv_newhouse_morenews_rexiao"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_height="40dp"
+               android:text="查看更多"
+               android:layout_marginTop="10dp"
+               android:background="#D1D1D1"
+               android:textColor="#000000"
+               android:textSize="14sp"
+               android:gravity="center"
+               android:layout_width="match_parent"/>
+	    
+	    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ffffff" />
+	    
+    </LinearLayout>
+
+</com.dumu.housego.util.MyReboundScrollView>

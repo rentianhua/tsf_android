@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_spinner2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup_spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+	
+        <com.dumu.housego.util.MyReboundScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.dumu.housego.util.ListViewForScrollView 
+             android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:id="@+id/lv_popwin_list2" 
+                    ></com.dumu.housego.util.ListViewForScrollView>
+            
+            
+                <LinearLayout 
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    >
+                  
+                    <EditText 
+                        android:id="@+id/ershou_lowprice_et"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:hint="最低价格"
+                          android:text=""
+                          android:gravity="center"
+                          android:inputType="number"
+                        android:background="#f0eff5"
+                        android:textSize="14sp"
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="-"
+                        />
+                            <EditText 
+                        android:id="@+id/ershou_highprice_et"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                          android:inputType="number"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:hint="最高价格"
+                            android:gravity="center"
+                        android:text=""
+                        android:background="#f0eff5"
+                        android:textSize="14sp"
+                        />
+                            <TextView 
+                                android:id="@+id/tv_spinner_jiage"
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                 android:textSize="14sp"
+                                 android:textColor="#999"
+                                />
+                            
+                    
+                            <TextView 
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/tv_low_high"
+                                android:layout_width="0dp"
+                                android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                            android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:text="确定"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                 android:textSize="14sp"
+                                android:textColor="#f04047"
+                                android:background="@drawable/shap_text_back"
+                                />
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+        </com.dumu.housego.util.MyReboundScrollView>
+	
+    </LinearLayout>
+</RelativeLayout>

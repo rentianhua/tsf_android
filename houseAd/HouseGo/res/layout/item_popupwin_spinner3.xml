@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_spinner_quyu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup_spinner_quyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal" >
+        
+        <RadioGroup 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rg_popwin_title"
+            >
+            <RadioButton 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="20dp"
+                android:id="@+id/rb_popwin_quyu"
+                android:gravity="center"
+                android:checked="true"
+                android:text="区域"
+                android:textColor="@drawable/selector_spinner_radiobuttontext"
+                android:background="@drawable/selector_spinner_radiobutton"
+                />
+                <RadioButton 
+                 android:id="@+id/rb_popwin_ditie"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:background="@drawable/selector_spinner_radiobutton"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textColor="@drawable/selector_spinner_radiobuttontext"
+                android:padding="20dp"
+                android:text="地铁"
+                />
+        </RadioGroup>
+        
+	
+        <ListView 
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:id="@+id/lv_popwin_list_quyu"
+            android:layout_weight="1"
+            android:scrollbars="none"
+         	android:listSelector="@drawable/selector_listview_item"
+            android:clickable="true"
+            ></ListView>
+        
+        
+        <ListView 
+               android:layout_width="0dp"
+            android:layout_height="240dp"
+             android:layout_weight="1"
+            android:scrollbars="none"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lv_popwin_list_area"
+         	android:listSelector="@drawable/selector_listview_item"
+            android:clickable="true"
+            ></ListView>
+
+    </LinearLayout>
+    
+       
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,RtlHardcoded,ContentDescription,UselessLeaf,UselessParent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_agentdata_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/appicon80x80" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_agentdata_pic"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_agentdata_pic"
+                android:text="xiumin55" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_agentdata_name"
+                android:text="高级经纪人"
+                android:textColor="#ff0000" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_mainarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_agentdata_name"
+                android:layout_below="@+id/tv_agentdata_name"
+                android:layout_marginTop="3dp"
+                android:text="东莞,惠州"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_mainarea"
+                android:layout_alignBottom="@+id/tv_agentdata_mainarea"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp" >
+            </RelativeLayout>
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_biaoqian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_agentdata_name"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_textview_biaoqian1"
+                android:padding="1dp"
+                android:paddingBottom="10dp"
+                android:text="客户热评"
+                android:textColor="#f4c600"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_agentdata_mainarea"
+                android:layout_below="@+id/tv_agentdata_mainarea"
+                android:layout_marginTop="3dp"
+                android:text="好评率:"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="89"
+                android:textColor="#ff0000"
+                android:textSize="14sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_haopinglv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_point"
+                android:layout_toRightOf="@+id/tv_agentdata_point"
+                android:text="%"
+                android:textColor="#969696"
+                android:textSize="14sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_haopinglv"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tv_haopinglv"
+                android:text="评论:"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView11"
+                android:layout_toRightOf="@+id/textView11"
+                android:text="10"
+                android:textColor="#ff0000"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_pinglun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_pinglun"
+                android:layout_toRightOf="@+id/tv_agentdata_pinglun"
+                android:text="条"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_biaoqian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_biaoqian"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tv_agentdata_biaoqian"
+                android:background="@drawable/shape_textview_biaoqian2"
+                android:padding="1dp"
+                android:text="房东信赖"
+                android:textColor="#11cd6e"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_biaoqian3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_biaoqian2"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tv_agentdata_biaoqian2"
+                android:background="@drawable/shape_textview_biaoqian3"
+                android:padding="1dp"
+                android:text="房东信赖"
+                android:textColor="#ea8010"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_biaoqian4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_biaoqian3"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tv_agentdata_biaoqian3"
+                android:background="@drawable/shape_textview_biaoqian4"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="房东信赖"
+                android:textColor="#328fca"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_agentdata_phone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/phone_rent" />
+            
+              <ImageView
+                  android:layout_toLeftOf="@+id/iv_agentdata_phone"
+                android:id="@+id/iv_agentdata_message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/agent_message" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

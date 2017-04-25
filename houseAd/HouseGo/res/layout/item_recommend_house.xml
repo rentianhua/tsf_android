@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/tv_recommend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         android:maxLines="2"
+        android:layout_marginRight="3dp"
+        android:textColor="#333"
+        android:layout_toLeftOf="@+id/iv_recommend_img"
+        android:text="刚需高攀不起深圳房价  工业产权房或成上车选择"
+        android:textSize="14sp" >
+</com.dumu.housego.entity.MyTextView>
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/tv_recommend_content"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginRight="3dp"
+        android:maxLines="2"
+        android:layout_alignBottom="@+id/iv_recommend_img"
+        android:layout_alignLeft="@+id/tv_recommend_title"
+        android:layout_toLeftOf="@+id/iv_recommend_img"
+        android:text="在工业用地上建起来的住宅，产权年限为50年，入市价格低于市场价。"
+        android:textColor="#999"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_recommend_img"
+       android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="#ffaaaaaa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/appicon120x120" />
+</RelativeLayout>
+</RelativeLayout>

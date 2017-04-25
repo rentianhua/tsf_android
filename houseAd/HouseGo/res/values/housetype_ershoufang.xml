@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="ershoufanghousetype">
+           <item>房型</item>
+        <item>复式</item>
+        <item>别墅 </item>
+        <item>公寓</item>
+    </string-array>
+</resources>

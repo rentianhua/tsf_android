@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="maphousearea">
+           <item>区域选择</item>
+        <item>福田区</item>
+        <item>罗湖区 </item>
+        <item>南山区</item>
+        <item>盐田区</item>
+        <item>宝安区</item>
+    </string-array>
+</resources>

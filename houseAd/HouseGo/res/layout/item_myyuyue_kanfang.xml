@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.dumu.housego.entity.MyTextView
+            android:paddingLeft="20dp"
+            android:id="@+id/myyuyue_kanfang_zhuangtai"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            
+            android:background="@drawable/daikan_blue"
+            android:text="新预约" />
+
+        <com.dumu.housego.entity.MyTextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/myyuyue_kanfang_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/myyuyue_kanfang_zhuangtai"
+            android:layout_below="@+id/myyuyue_kanfang_zhuangtai"
+            android:layout_marginTop="15dp"
+             android:textColor="#4e575b"
+            android:text="2016-03-12 12:00-15:00" />
+
+        <com.dumu.housego.entity.MyTextView
+            android:id="@+id/myyuyue_kanfang_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/myyuyue_kanfang_time"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#4e575b"
+            android:layout_below="@+id/myyuyue_kanfang_time"
+            android:text="广州惠州惠城" />
+
+        <com.dumu.housego.entity.MyTextView
+            android:id="@+id/myyuyue_kanfang_guoqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/myyuyue_kanfang_zhuangtai"
+            android:layout_toRightOf="@+id/myyuyue_kanfang_zhuangtai"
+            android:layout_marginLeft="3dp"
+            
+            android:textColor="#ff0000"
+            android:text="" />
+
+        <LinearLayout 
+            android:id="@+id/ll_show_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+              android:layout_marginTop="2dp"
+             android:layout_alignLeft="@+id/myyuyue_kanfang_title"
+            android:layout_below="@+id/myyuyue_kanfang_title"
+            android:paddingBottom="10dp"
+            >
+        </LinearLayout>
+        
+          <Button
+         android:layout_below="@+id/ll_show_phone"
+        android:layout_width="match_parent"
+          android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+
+          <TextView
+              android:layout_marginRight="20dp"
+              android:id="@+id/tv_sure"
+              android:background="@drawable/shape_textview_sure"
+              android:layout_centerInParent="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:textSize="12sp"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:paddingTop="2dp"
+              android:paddingBottom="2dp"
+              android:textColor="#fff"
+              android:text="确认" />
+          
+          
+          <TextView
+              android:paddingTop="10dp"
+              android:paddingRight="10dp"
+              android:textColor="#4e575b"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toLeftOf="@+id/tv_phone"
+              android:text="联系方式" />
+          
+
+          <TextView
+              android:paddingTop="10dp"
+              android:paddingRight="10dp"
+              android:id="@+id/tv_phone"
+              android:textColor="#4e575b"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:text="15005148914" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

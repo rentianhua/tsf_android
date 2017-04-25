@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dumu.housego.util.MyReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:ignore="HardcodedText,ContentDescription,RtlSymmetry,RtlHardcoded,ObsoleteLayoutParam,TooManyViews" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_my_back"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/myvc_01" />
+
+            <TextView
+                android:id="@+id/tv_my_login_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_my_back"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:text="登录/注册"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.dumu.housego.util.CircleImageView
+                android:id="@+id/iv_my_Photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/tv_my_login_regist"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="26dp"
+                android:src="@drawable/touxiang2" />
+        </RelativeLayout>
+
+        <!-- 用户未登陆界面 -->
+
+        <LinearLayout
+            android:id="@+id/ll_mysetting_nologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_back"
+            android:orientation="vertical" >
+            
+               <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                  android:layout_marginTop="18dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Myershoufang"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#fff"
+                android:layout_alignParentLeft="true"
+              
+               >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/maifang_01" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的二手房"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Myrenting"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_Myershoufang"
+            >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/chuzu01" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的出租"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Myentrust"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_below="@+id/rl_Myrenting"
+               >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/weituo01" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的委托"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="21dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/gray_right" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Yuyueguanli"
+                android:layout_width="match_parent"
+                  android:background="#fff"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Myentrust"
+              >
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/guanzhu_01" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的关注"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                 android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_myguanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_below="@+id/rl_Myentrust"
+              >
+
+                <ImageView
+                    android:id="@+id/imageView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/youhui_01" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的优惠券"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+              android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Histroy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/lishi_01" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="历史记录"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_no_goufangjsq"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/jisuanqi01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="购房计算器"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+          <Button
+                android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />  
+            
+            
+            
+        </LinearLayout>
+
+        <!-- 普通用户登陆界面 -->
+
+        <LinearLayout
+            android:id="@+id/ll_mysetting_putong_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_back"
+            android:orientation="vertical"
+            android:visibility="gone"
+        >
+            
+             
+               <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                  android:layout_marginTop="18dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_myguanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/guanzhu_01" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的关注"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_mysalehouse"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_Myershoufang"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/maifang_01" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我要卖房"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_mychuzu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Myrenting"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/chuzu01" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="50dp"
+                    android:text="我要出租"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_myzhufang"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Myentrust"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView711"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/qiuzu_01" />
+
+                <TextView
+                    android:id="@+id/textView711"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我要租房"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView811"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_myshophouse"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Myentrust"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView171"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/maifang_10" />
+
+                <TextView
+                    android:id="@+id/textView171"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我要买房"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView181"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+
+	
+            <RelativeLayout
+                android:id="@+id/rl_putong_myyouhuiquan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView912"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/youhui_01" />
+
+                <TextView
+                    android:id="@+id/textView921"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的优惠券"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1021"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                 android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_mygoudidingdan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView942"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/goudi_01" />
+
+                <TextView
+                    android:id="@+id/textView942"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="勾地订单"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1052"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_putong_myhistroy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView932"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/lishi_01" />
+
+                <TextView
+                    android:id="@+id/textView932"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="历史记录"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1032"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+            
+             <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+             android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+             
+                 <RelativeLayout
+                android:id="@+id/rl_PT_goufangjsq"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/jisuanqi01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="购房计算器"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+          <Button
+                android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" /> 
+             
+        </LinearLayout>
+
+        <!-- 经纪人用户登陆界面 -->
+
+        <LinearLayout
+            android:id="@+id/ll_mysetting_agent_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_back"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+             
+               <Button
+                android:layout_width="match_parent"
+        android:layout_height="@dimen/fengexian"
+                  android:layout_marginTop="18dp"
+                android:background="#c9c9cb" />
+            <RelativeLayout
+                android:id="@+id/rl_agent_ershoufangguanli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/maifang_01" />
+
+                <TextView
+                    android:id="@+id/textView221"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="二手房管理"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView251"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_chuzufangguanli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_Myershoufang"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView351"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/chuzu01" />
+
+                <TextView
+                    android:id="@+id/textView351"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="出租房管理"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView415"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_chengjiaofangyuan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Myrenting"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView541"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/chengjiao01" />
+
+                <TextView
+                    android:id="@+id/textView541"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="成交房源"
+                    android:textSize="14sp" />
+
+               <ImageView
+                    android:id="@+id/imageView641"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            
+
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_qiuzuguanli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Myentrust"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView176"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/qiuzu_01" />
+
+                <TextView
+                    android:id="@+id/textView1716"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="求租管理"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1861"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_qiugouguanli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView924"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/maifang_10" />
+
+                <TextView
+                    android:id="@+id/textView9442"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="求购管理"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1042"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+            
+            <RelativeLayout
+                android:id="@+id/rl_agent_weituoguanli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView9241"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/weituo" />
+
+                <TextView
+                    android:id="@+id/textView94421"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="委托管理"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10421"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+                <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+            <RelativeLayout
+                android:id="@+id/rl_agent_myyouhuiquan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView9126"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/youhui_01" />
+
+                <TextView
+                    android:id="@+id/textView9216"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="我的优惠券"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10216"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_goudidingdan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView9426"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/goudi_01" />
+
+                <TextView
+                    android:id="@+id/textView9426"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="勾地订单"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10526"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_myhistroy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageView9732"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/lishi_01" />
+
+                <TextView
+                    android:id="@+id/textView9382"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="历史记录"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10382"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+            
+              <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+             android:layout_marginLeft="50dp"
+                android:background="#c9c9cb" />
+             
+                 <RelativeLayout
+                android:id="@+id/rl_AT_goufangjsq"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                  android:background="#fff"
+                android:layout_below="@+id/rl_Yuyueguanli"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/jisuanqi01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:text="购房计算器"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+          <Button
+                android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_line"
+            android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+            android:layout_marginTop="15dp"
+            android:background="#c9c9cb" />
+
+        <RelativeLayout
+            android:id="@+id/rl_settings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btn_line"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/imageView1111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/setting_01" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="设置"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/gray_right" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_line1"
+            android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_settings"
+            android:background="#c9c9cb" />
+       
+       
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+          />
+        
+        
+    </LinearLayout>
+
+</com.dumu.housego.util.MyReboundScrollView>

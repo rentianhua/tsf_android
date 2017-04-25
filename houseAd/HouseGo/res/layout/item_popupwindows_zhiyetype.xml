@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_yizhitype"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup_yizhitype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_cancle_yizhitype"
+        android:background="@drawable/btn_submit_shap2"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_yizhitype_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="选择职业类型"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_yizhitype_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="个人"
+                android:textColor="#585858"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/item_popupwindows_yizhitype_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="公司"
+                android:textColor="#585858"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+     
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/ll_cancle_yizhitype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_submit_shap2"
+        android:orientation="vertical" >
+           <Button
+            android:id="@+id/item_popupwindows_yizhitype_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="取消"
+            android:textColor="#585858"
+            android:textSize="18sp" />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+		
+	    <TextView 
+	           android:id="@+id/tv_wheel_cancle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="取消"
+	        android:padding="10dp"
+	        android:textSize="14sp"
+	        />	    
+	        
+	       <TextView 
+	           android:id="@+id/tv_wheel_sure"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="确定"
+	        android:layout_alignParentRight="true"
+	        android:padding="10dp"
+	        android:textSize="14sp"
+	        />	
+	     <TextView 
+	         android:id="@+id/tv_wheel_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="请选择房屋配置"
+	        android:padding="10dp"
+	        android:textSize="14sp"
+	        android:layout_centerInParent="true"
+	        />	
+	    
+	</RelativeLayout>
+    
+    
+    
+
+    <Button
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_submit_shap2"
+        android:orientation="horizontal" >
+	
+        <LinearLayout 
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+             android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            >
+            <CheckBox 
+                android:id="@+id/check_1"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空调"
+                />
+              <CheckBox 
+                android:id="@+id/check_2"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热水器"
+                />
+                <CheckBox 
+                android:id="@+id/check_3"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="冰箱"
+                />
+                <CheckBox 
+                android:id="@+id/check_4"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗衣机"
+                />
+                
+                  <CheckBox 
+                android:id="@+id/check_5"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电视"
+                />
+        </LinearLayout>
+        
+       
+               <LinearLayout 
+                   android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <CheckBox 
+                android:id="@+id/check_6"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宽带"
+                />
+              <CheckBox 
+                android:id="@+id/check_7"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="床"
+                />
+                <CheckBox 
+                android:id="@+id/check_8"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家具"
+                />
+                  <CheckBox 
+                android:id="@+id/check_9"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天然气"
+                />
+        </LinearLayout>
+
+ 
+
+     
+    </LinearLayout>
+
+</LinearLayout>

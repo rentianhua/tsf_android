@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+    <ImageView
+        android:id="@+id/newhouselist_iv"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="#ffaaaaaa"
+        android:src="@drawable/touxiang" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouselist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/newhouselist_iv"
+        android:layout_toRightOf="@+id/newhouselist_iv"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+         android:singleLine="true"
+        android:text="深圳宝安石岩-滨湖公馆" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouselist_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newhouselist_title"
+        android:layout_below="@+id/newhouselist_title"
+        android:singleLine="true"
+        android:textSize="12sp"
+          android:textColor="#7C7B76"
+        android:layout_marginTop="3dp"
+        android:text="深圳龙华新区观澜" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouselist_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newhouselist_address"
+        android:layout_below="@+id/newhouselist_price"
+        android:layout_marginTop="3dp"
+          android:textColor="#7C7B76"
+        android:text="深圳 宝安区 石岩"
+        android:textSize="12sp" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouselist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/newhouselist_address"
+        android:text="14500元/㎡"
+        android:textColor="#ff0000"
+        android:textSize="14sp" />
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AndroidAnimations">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/HouseGo/libs/AndroidAnimations.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

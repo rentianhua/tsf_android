@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    
+    <ImageView
+        android:id="@+id/newhouse_rexiao_iv"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="#ffaaaaaa"
+        android:src="@drawable/touxiang" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouse_rexiao_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/newhouse_rexiao_iv"
+        android:layout_toRightOf="@+id/newhouse_rexiao_iv"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:text="深圳宝安石岩-滨湖公馆" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouse_rexiao_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newhouse_rexiao_title"
+        android:layout_below="@+id/newhouse_rexiao_title"
+        android:textSize="12sp"
+        android:textColor="#7C7B76"
+        android:layout_marginTop="3dp"
+        android:text="1-2室/113-126平米" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouse_rexiao_address"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newhouse_rexiao_area"
+        android:layout_below="@+id/newhouse_rexiao_area"
+        android:textSize="12sp"
+          android:textColor="#7C7B76"
+        android:text="深圳 宝安区 石岩" />
+
+    <com.dumu.housego.entity.MyTextView
+        android:id="@+id/newhouse_rexiao_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#ff0000"
+        android:layout_alignLeft="@+id/newhouse_rexiao_address"
+        android:layout_below="@+id/newhouse_rexiao_address"
+        android:text="14500元/㎡" />
+</RelativeLayout>
+</RelativeLayout>

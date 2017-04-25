@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_submit_shap2"
+        layout="@layout/include_style_btn" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/btn_submit_shap2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="@dimen/fengexian"
+            android:layout_height="match_parent"
+            android:background="#c9c9cb" />
+
+        <com.aigestudio.wheelpicker.view.WheelPicker
+            android:id="@+id/main_dialog_container1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+              android:layout_width="@dimen/fengexian"
+            android:layout_height="match_parent"
+            android:background="#c9c9cb" />
+
+        <com.aigestudio.wheelpicker.view.WheelPicker
+            android:id="@+id/main_dialog_container2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+           android:layout_width="@dimen/fengexian"
+            android:layout_height="match_parent"
+            android:background="#c9c9cb" />
+
+        <com.aigestudio.wheelpicker.view.WheelPicker
+            android:id="@+id/main_dialog_container3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+             android:layout_width="@dimen/fengexian"
+            android:layout_height="match_parent"
+            android:background="#c9c9cb" />
+    </LinearLayout>
+
+</LinearLayout>

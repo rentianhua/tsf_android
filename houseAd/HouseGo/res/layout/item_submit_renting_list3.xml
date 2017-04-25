@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f0eff5"
+    android:layout_height="match_parent" >
+    
+   <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn_submit_shap2"
+         android:layout_margin="10dp"
+        android:orientation="vertical" >
+ 		<RelativeLayout
+ 		    android:padding="5dp"
+      		 android:id="@+id/item_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+ 		   
+ 		       
+ 		    
+                    <ImageView
+            android:id="@+id/iv_submit_renting_list"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:background="#ffaaaaaa"
+            android:paddingBottom="6dp"
+            android:src="@drawable/touxiang3" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_submit_renting_list_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignLeft="@+id/tv_submit_renting_list_title"
+                android:layout_toLeftOf="@+id/tv_submit_renting_list_zongjia"
+                android:layout_below="@+id/tv_submit_renting_list_title"
+                android:text="龙岗新区/布吉/国展苑"
+                 android:textColor="#999"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_submit_renting_list_zongjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_submit_renting_list_detail"
+                android:layout_toLeftOf="@+id/textView1"
+                android:text="8000"
+                android:textColor="#ff0000"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_submit_renting_list_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_submit_renting_list_detail"
+                android:layout_below="@+id/tv_submit_renting_list_detail"
+               android:layout_marginTop="5dp"
+                android:text="1室0厅 / 128平米"
+                 android:textColor="#999"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_submit_renting_list_chuzuType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_alignLeft="@+id/tv_submit_renting_list_area"
+                android:layout_below="@+id/tv_submit_renting_list_area"
+                 android:layout_marginTop="5dp"
+                android:text="直接出租"
+                android:paddingBottom="6dp"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_submit_renting_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                 android:singleLine="true"
+                android:layout_alignTop="@+id/iv_submit_renting_list"
+                android:layout_toRightOf="@+id/iv_submit_renting_list"
+                android:text="深圳大鹏新区葵涌"
+                android:textSize="12sp" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_submit_renting_list_detail"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="元/月"
+                android:textColor="#ff0000"
+                android:textSize="12sp" />
+
+ 	
+            
+<LinearLayout 
+    			android:id="@+id/rl_renting"
+    			android:orientation="horizontal"
+    			android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_submit_renting_list"
+                >
+
+              <com.dumu.housego.entity.MyTextView
+                  android:id="@+id/tv_shenqingshouchu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_toLeftOf="@+id/iv_submit_renting_list_edit"
+                  android:gravity="center"
+                  android:text="申请已售出"
+                  android:layout_marginRight="5dp"
+                  android:textSize="12sp" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/iv_submit_renting_list_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_submit_renting_list_delete"
+                      android:layout_gravity="center_vertical"
+                android:onClick="doClick"
+                android:src="@drawable/bianjipinglun"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                />
+
+              
+
+</LinearLayout>
+ 
+     </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

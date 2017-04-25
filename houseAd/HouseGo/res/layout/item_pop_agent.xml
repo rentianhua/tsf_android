@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/rl_agent_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_submit_shap2" >
+
+        <ImageView
+            android:id="@+id/iv_agent_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="3dp"
+            android:src="@drawable/appicon60x60" />
+
+        <TextView
+            android:id="@+id/tv_agent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_agent_pic"
+            android:padding="3dp"
+            android:text="路延误"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_agent_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_agent_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_agent_pic"
+            android:padding="3dp"
+            android:text="评论:  暂无"
+            android:textColor="#999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_agent_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_agent_pinglun"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_agent_pic"
+            android:padding="3dp"
+            
+            android:text="4008560008"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <ImageView
+            
+            android:id="@+id/iv_agent_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/phone_rent" />
+        
+        <ImageView
+            android:layout_toLeftOf="@+id/iv_agent_phone"
+            android:id="@+id/iv_agent_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/agent_message" />
+    </RelativeLayout>
+
+</RelativeLayout>

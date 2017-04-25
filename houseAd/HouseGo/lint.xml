@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/liuyanlist_item.xml" />
+    </issue>
+    <issue id="Instantiatable" severity="warning" />
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="UnknownId" severity="warning" />
+</lint>

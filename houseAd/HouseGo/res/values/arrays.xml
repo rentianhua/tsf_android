@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WheelArrayDefault">
+        <item>水库</item>
+        <item>莲塘</item>
+        <item>翠竹</item>
+        <item>东门</item>
+        <item>黄贝岭</item>
+        <item>蔡屋围</item>
+        <item>洪湖</item>
+        <item>笋岗</item>
+        <item>布心</item>
+        <item>人民南</item>
+        <item>泥岗</item>
+        <item>宝安南</item>
+        <item>银湖</item>
+  
+    </string-array>
+    
+        <string-array name="QIUZU_tingshi_wheel">
+        <item>1室</item>
+        <item>2室</item>
+        <item>3室</item>
+        <item>4室</item>
+        <item>5室</item>
+        <item>5室以上</item>
+    </string-array>
+    
+          <string-array name="SEARCH_DATA">
+        <item>二手房</item>
+        <item>新房</item>
+        <item>租房</item>
+    
+      
+    </string-array>
+    
+    
+    
+    
+    
+    <string-array name="WheelArrayConstellation">
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+    </string-array>
+    <string-array name="WheelArrayZodiac">
+        <item>Rat</item>
+        <item>Ox</item>
+        <item>Tiger</item>
+        <item>Hare</item>
+        <item>Dragon</item>
+        <item>Snake</item>
+        <item>Horse</item>
+        <item>Sheep</item>
+        <item>Monkey</item>
+        <item>Cock</item>
+        <item>Dog</item>
+        <item>Boar</item>
+    </string-array>
+</resources>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dumu.housego.PuTongMyGuanZhuActivity"
+    tools:ignore="ObsoleteLayoutParam,UseCompoundDrawables,RtlSymmetry,HardcodedText,RtlHardcoded,ContentDescription,UselessParent,InefficientWeight,UselessLeaf,TooManyViews,TextFields,LabelFor" >
+
+    <!-- 普通-我的关注 -->
+
+    <RelativeLayout
+        android:id="@+id/window_putong_guanzhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:id="@+id/tv_agentpersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="我的关注"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_back_putongguanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/textView1"
+                    android:src="@drawable/white_left" />
+
+             
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rl_title"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_guanzhu_control"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/guanzhu_ershou"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="二手房"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/guanzhu_new"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="新房"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_title"
+            android:background="#c9c9cb" />
+
+        <com.dumu.housego.util.NoScrollViewPager
+            android:id="@+id/guanzhu_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_line" >
+        </com.dumu.housego.util.NoScrollViewPager>
+    </RelativeLayout>
+    <!-- 普通-我的关注 -->
+
+
+    <!-- fragment -->
+
+    <FrameLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <!-- fragment -->
+
+
+    <!-- 普通-发布求租 -->
+
+</RelativeLayout>

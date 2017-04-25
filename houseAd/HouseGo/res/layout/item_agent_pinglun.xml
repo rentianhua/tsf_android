@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+                android:id="@+id/rl_agent_pinglun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.dumu.housego.util.CircleImageView
+                    android:id="@+id/iv_agent_author"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/agent2" />
+
+                <com.dumu.housego.entity.MyTextView
+                    android:id="@+id/tv_agent_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_agent_author"
+                    android:layout_alignRight="@+id/tv_agent_date"
+                    android:layout_below="@+id/iv_agent_author"
+                    android:paddingBottom="20dp"
+                    android:textColor="#333"
+                    android:text="13787886788" />
+
+                <com.dumu.housego.entity.MyTextView
+                    android:id="@+id/tv_agent_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_agent_author"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_agent_author"
+                    android:textColor="#b1b4b5"
+                    android:text="TextView" />
+                
+                <com.dumu.housego.entity.MyTextView
+                    android:id="@+id/tv_agent_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_agent_author"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                   android:layout_alignParentRight="true"
+                   android:textColor="#b1b4b5"
+                    android:text="TextView" />
+
+            </RelativeLayout>
+
+</RelativeLayout>

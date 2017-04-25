@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="maphousesaixuan">
+        <item>筛选</item>
+        <item>120m2 </item>
+        <item>160m2</item>
+        <item>220m2</item>
+        <item>300m2</item>
+    </string-array>
+</resources>

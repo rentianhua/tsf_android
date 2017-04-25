@@ -1,0 +1,1341 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dumu.housego.AgentChangeUserInfoActivity"
+    tools:ignore="ObsoleteLayoutParam,UseCompoundDrawables,RtlSymmetry,HardcodedText,RtlHardcoded,ContentDescription,Deprecated,TooManyViews" >
+
+    <com.dumu.housego.util.MyReboundScrollView
+        android:id="@+id/agent_changeshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="#ee3a43" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:text="个人中心"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_agent_changeinfo_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/back_agent_changeinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/textView1"
+                        android:src="@drawable/white_left" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginTop="18dp"
+                android:background="#c9c9cb" />
+
+            
+            <RelativeLayout
+                android:id="@+id/rl_aegnt_MyTouxiang"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="头像"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+
+                <com.dumu.housego.util.CircleImageView
+                    android:id="@+id/iv_agent_Photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/imageView2"
+                    android:src="@drawable/touxiang2" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+              android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <Button
+                android:id="@+id/btn_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_below="@+id/rl_Mynichen"
+                android:layout_marginTop="30dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/btn_line"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="手机号"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     android:textColor="#999"
+                    android:gravity="center_vertical"
+                    android:paddingRight="30dp"
+                    android:text="15005148914"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+              android:layout_height="@dimen/fengexian"
+                android:layout_below="@+id/rl_Mynichen"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_viptype"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/btn_line"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="会员类型"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_viptype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="30dp"
+                     android:textColor="#999"
+                    android:text="普通用户"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_below="@+id/rl_Mynichen"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_realname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="真实姓名"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_realname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView21"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                     android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_below="@+id/rl_Mynichen"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_sex"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/textView211"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="性别"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView211"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                     android:textColor="#999"
+                    android:text="男"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView211"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_below="@+id/rl_Mynichen"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_fenjihao"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/textView2111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="分机号"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_fenjihao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView2111"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                     android:textColor="#999"
+                    android:text="申请分机号"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_below="@+id/rl_personal_phone"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_gerenjieshao"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="个人介绍"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/tv_gerenshuoming"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/textView213"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp" 
+                   android:gravity="right|center"
+                    android:lines="1"
+                    android:textColor="#999"
+                    android:layout_toLeftOf="@+id/imageView213"
+                    android:text="TextView" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <Button
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:layout_marginTop="30dp"
+                android:background="#c9c9cb" />
+
+            <!-- agent -->
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_shenfenzheng"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="身份证号码"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_shenfenzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView21111"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                     android:textColor="#999"
+                    android:text="320830199103055614"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView21111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+              android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_mainarea"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="主营区域"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_mainarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView25"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="宝安区,华龙新区"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_zhiyeType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="职业类型"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_zhiyeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView215"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="个人"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/line_gongsiname"
+                android:layout_width="match_parent"
+               android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_companyName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/tv_1000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="公司名称"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/tv_gongsi"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/tv_1000"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp" 
+                   android:gravity="right|center"
+                    android:lines="1"
+                    android:textColor="#999"
+                    android:layout_toLeftOf="@+id/iv_1000"
+                    android:text="TextView" />
+                
+
+                <ImageView
+                    android:id="@+id/iv_1000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_chongyeshijian"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="从业时间"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agent_chongyeshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView2145"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="1-2年"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2145"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_upload"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_title"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/tv_123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="上传身份证"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/tv_sfz_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp" 
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="#999"
+                    android:layout_toLeftOf="@+id/iv_agent_upload"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/iv_agent_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     android:textColor="#999"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_marginTop="30dp"
+                android:background="#c9c9cb" />
+
+            <RelativeLayout
+                android:id="@+id/rl_agent_changepassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/btn_line2"
+                android:background="#fff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="修改密码"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_right" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb"
+                 />
+        </LinearLayout>
+    </com.dumu.housego.util.MyReboundScrollView>
+
+    <!-- 修改真实姓名 -->
+
+    <LinearLayout
+        android:id="@+id/ll_agent_changerealname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rl_changrealname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="真实姓名"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agent_changerealname_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_agent_changerealname_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+            android:layout_marginTop="30dp"
+            android:background="#c9c9cb" />
+
+        <EditText
+            android:id="@+id/et_agent_changrealname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/rl_agent_changrealname"
+            android:background="#fff"
+            android:hint="请输入真实姓名"
+            android:paddingLeft="15dp"
+            android:text="杨丽军"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="match_parent"
+         android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="!上传真实姓名，淘深房为您提供更多房源"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 分机号申请与解绑 -->
+
+    <LinearLayout
+        android:id="@+id/ll_aegnt_changfenjiahao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="分机号管理"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agent_changefenjihao_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/agent_fenjihao_shenqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <TextView
+                android:id="@+id/tv_agent_fenjihao_show"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="15005148914" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <Button
+                android:id="@+id/btn_agent_changefenjihao_shenqing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_submit_shap"
+                android:text="申请分机号"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/agent_fenjihao_jiebang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:layout_width="match_parent"
+             android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <TextView
+                android:id="@+id/tv_agent_fenjihao_show_1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="15005148914" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:background="#c9c9cb" />
+
+            <Button
+                android:id="@+id/btn_agent_changefenjihao_jiebang"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_submit_shap"
+                android:text="解绑分机号"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 个人介绍 -->
+
+    <LinearLayout
+        android:id="@+id/ll_agent_gerenjieshao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="个人介绍"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agent_changegerenjieshao_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_agent_changegerenjieshao_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_agent_changegerenjieshao"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入个人说明，140个字以内"
+            android:padding="5dp"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c9c9cb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="添加说明，让别人更加了解你"
+            android:textColor="#b1b4b5" />
+    </LinearLayout>
+
+    <!-- 身份证号码 -->
+
+    <LinearLayout
+        android:id="@+id/ll_agent_changeshenfenzheng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="修改身份证号码"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agent_changeshenfenzheng_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_agent_changeshenfenzheng_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+            android:layout_marginTop="30dp"
+            android:background="#c9c9cb" />
+
+        <EditText
+            android:id="@+id/et_agent_changeshenfenzheng"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/rl_agent_changrealname"
+            android:background="#fff"
+            android:hint="请输入身份证号码"
+            android:paddingLeft="10dp"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="match_parent"
+          android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="淘深房为您提供最优质的服务"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 公司名称 -->
+
+    <LinearLayout
+        android:id="@+id/ll_agent_changecompanyname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="公司名称"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agent_changecompanyname_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_agent_changecompanyname_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+            android:layout_marginTop="30dp"
+            android:background="#c9c9cb" />
+
+        <EditText
+            android:id="@+id/et_agent_changecompanyname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#fff"
+            android:hint="请输入公司名称"
+            android:paddingLeft="10dp"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="淘深房为您提供最优质的服务"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 修改密码 -->
+
+    <LinearLayout
+        android:id="@+id/ll_agent_changepassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#ee3a43" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="修改密码"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agent_changepassword_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+            android:layout_marginTop="45dp"
+            android:background="#c9c9cb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_agent_current_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:text="当前密码:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_agent_change_currentpassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:hint="请输入当前密码"
+                android:password="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_agent_new_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:text="新  密  码:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_agent_change_Newpassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:hint="至少6个以上字符"
+                android:password="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_agent_re_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:text="确认密码:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_agent_change_repassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:hint="请再次输入新密码"
+                android:password="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+            android:background="#c9c9cb" />
+
+        <Button
+            android:id="@+id/btn_agent_changepassword_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/et_repassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_submit_shap"
+            android:text="确定提交"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="若忘记当前密码，可以尝试手机验证找回"
+            android:textColor="#b1b4b5"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

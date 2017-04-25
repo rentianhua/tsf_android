@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_weizhifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_submit_shap2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_dingdan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_yhq_dingdanhao"
+                android:text="订单号:"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_yhq_dingdanhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:text="GD20161122165501179"
+                android:textColor="#333" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#c9c9cb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1"
+            android:padding="5dp">
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_yhq_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:text="湖南墨阳432.4亩"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_yhq_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_yhq_name"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="购房人手机号:  15005148914"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_yhq_shuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_yhq_phone"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="使用说明： 每套房仅限一张优惠劵"
+                android:textColor="#333" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.dumu.housego.entity.MyTextView
+                    android:id="@+id/tv_zhuangtai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shap_goudi_text"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="未支付"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/delete_iv" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 勾地订单-完成支付 -->
+
+    <LinearLayout
+        android:id="@+id/ll_zhifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_submit_shap2"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_dingdan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_zhifu_dingdanhao"
+                android:text="订单号:"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_dingdanhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:text="GD20161122165501179"
+                android:textColor="#333" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fengexian"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#c9c9cb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_2"
+            android:padding="5dp">
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_loupan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:text="湖南墨阳432.4亩"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_liushuihao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_zhifu_loupan"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="支付宝交易流水号:"
+                android:textColor="#333" />
+
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_liushuihao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_liushuihao"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_liushuihao"
+                android:singleLine="true"
+                android:text="202323232222222222"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_liushuihao"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="支付宝账号:"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_zhanghao"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_zhanghao"
+                android:singleLine="true"
+                android:text="15005148914"
+                android:textColor="#333" />
+
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifujine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_zhanghao"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="支付金额:"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_zhifujine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_zhifujine"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_zhifujine"
+                android:singleLine="true"
+                android:text="0.01元"
+                android:textColor="#333" />
+
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifutime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_zhifujine"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="支付时间:"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_zhifutime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_zhifutime"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_zhifutime"
+                android:singleLine="true"
+                android:text="2016-11-22 17:51:09"
+                android:textColor="#333" />
+
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifustatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_zhifutime"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:text="支付状态:"
+                android:textColor="#333" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_zhifu_zhifustatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_zhifustatus"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_zhifustatus"
+                android:singleLine="true"
+                android:text="已支付"
+                android:textColor="#333" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

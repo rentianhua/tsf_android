@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_wheel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="勾地须知"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:orientation="vertical">
+        
+  
+           <TextView 
+               android:visibility="gone"
+            android:background="@drawable/btn_submit_shap3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/tv_goudi_info"
+            android:fadeScrollbars="true"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColor="#b1b4b5"
+            /> 
+            
+          <WebView 
+              android:id="@+id/wb_goudi_info"
+              android:layout_width="match_parent"
+              android:layout_height="140dp"
+              android:scrollbars="vertical"
+              />    
+ 
+        
+        
+        <CheckBox 
+            android:checked="false"
+            android:id="@+id/cb_goudi_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:text="我同意此协议"
+            android:textSize="14sp"
+            />
+        
+        <Button 
+           	
+            android:enabled="false"
+            android:id="@+id/btn_goudi_gou"
+            android:layout_marginTop="15dp"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:text="立即勾地"
+            android:background="#ed1b24"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#fff"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

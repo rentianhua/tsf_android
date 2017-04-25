@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_spinner_more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/ll_popup_spinner_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <com.dumu.housego.util.MyReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <com.dumu.housego.entity.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="属性"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_shangyongbangong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="商用/办公土地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_shangye"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="商业用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_zongheyongdi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="综合用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_zhuzhaiyongdi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="住宅用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_cunjiti"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="村集体用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_junduiyongdi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="军队用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_linyeyongdi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="林业用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_sx_gongyeyongdi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="工业用地"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="#bfbfbf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <com.dumu.housego.entity.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="类型"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_shangyeyong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="商品用房"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_zhuzhaiyong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="住宅用房"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_xiezilou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="写字楼"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_gongyeyongfang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="工业厂房"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_jiudian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="酒店"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_jiti"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="集体"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_type_junchanfang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="军产房"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/ershou_wuye_gongyechanquanfang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="#bfbfbf" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/ershou_wuye_qita"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="#bfbfbf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <com.dumu.housego.entity.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="方式"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_fangshi_zhengtizhuanrang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="整体转让"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_fangshi_kongguquanzhuanrang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="控股权转让"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_fangshi_bufenzhuanrang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="部分转让"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_fangshi_guquanrongzi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="股权融资"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_fangshi_zhaiquanrongzi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="债权融资"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+
+                    <com.dumu.housego.entity.MyTextView
+                        android:id="@+id/blockbrade_fangshi_zulinrongzi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_spinner_text"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="租赁融资"
+                        android:textColor="@drawable/ppt_text_color_selector" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/blocktrade_spinner_cancle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="清空条件"
+                        android:textColor="#bfbfbf"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#bfbfbf" />
+
+                    <TextView
+                        android:id="@+id/blocktrade_spinner_ok"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="确定"
+                        android:textColor="#bfbfbf"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#bfbfbf" />
+
+                <com.dumu.housego.entity.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#fff" />
+
+            </LinearLayout>
+        </com.dumu.housego.util.MyReboundScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

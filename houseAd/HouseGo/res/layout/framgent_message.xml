@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ee3a43" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5dp"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_back_login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+    
+ 
+ 	<com.dumu.housego.util.MyReboundScrollView 
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:id="@+id/sc_message"
+ 	    android:layout_below="@+id/rl_title"
+ 	    android:background="#fff"
+ 	    >
+ 	    <com.dumu.housego.util.ListViewForScrollView 
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="match_parent"
+ 	        android:id="@+id/lv_message"
+ 	        ></com.dumu.housego.util.ListViewForScrollView>
+ 	    
+ 	    
+ 	</com.dumu.housego.util.MyReboundScrollView>
+ 
+ 
+ 
+    <RelativeLayout 
+        android:id="@+id/rl_message_no"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/rl_title"
+        >
+       <ImageView 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/usernoinfo"
+           />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="146dp"
+           android:text="消息列表为空" />
+	
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/textView2"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:textSize="12sp"
+           android:textColor="#7B7B7B"
+           android:text="勾搭几个经纪人或关注小区或房源吧" />
+
+       </RelativeLayout>
+</RelativeLayout>

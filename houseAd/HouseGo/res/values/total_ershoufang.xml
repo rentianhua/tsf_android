@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="ershoufangtotal">
+           <item>总价</item>
+        <item>100W</item>
+        <item>200W</item>
+        <item>300W</item>
+        <item>400W</item>
+        <item>500W</item>
+    </string-array>
+</resources>

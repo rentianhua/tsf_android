@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+          android:background="#F0F0F0"
+    tools:context="com.dumu.housego.AgentMainActivity"
+    tools:ignore="TextFields,HardcodedText,RtlHardcoded,InefficientWeight,ContentDescription,LabelFor" >
+
+    <RelativeLayout
+        android:id="@+id/rl_agent_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/iv_agent_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/gray_left" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/msg_gray_44x34" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="经纪人列表"
+           
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_line"
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/fengexian"
+        android:layout_below="@+id/rl_agent_title"
+        android:background="#c9c9cb" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/ll_agent_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+        android:layout_below="@+id/btn_line"
+        android:layout_centerHorizontal="true"
+         android:background="#ffffff"
+            android:layout_marginLeft="30dp"
+        android:orientation="horizontal" >
+	
+        	<ImageView 
+        	    android:layout_gravity="center"
+        	    android:layout_marginLeft="10dp"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/search_gray_32x30"
+        	    />
+        <TextView
+            android:id="@+id/tv_ershoufang_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:focusable="false"
+           android:background="#fff"
+           android:layout_marginLeft="5dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:text="请输入经纪人姓名"
+            android:textColor="#D8D7DA"
+            android:textSize="14sp" >
+			
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/fengexian"
+        android:layout_below="@+id/ll_agent_search"
+        android:background="#c9c9cb" />
+
+    <LinearLayout
+        android:id="@+id/ll_agent_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F0F0F0"
+        android:layout_below="@+id/ll_agent_search" >
+         
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+              <TextView 
+            android:paddingLeft="20dp"
+            android:id="@+id/agent_quyu_sp1"
+            android:layout_width="wrap_content"
+           android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="区域"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            /> 
+            
+        </RelativeLayout>
+        
+      <Button 
+            android:layout_width="@dimen/fengexian"
+            android:layout_height="match_parent"
+            android:background="#c9c9cb"
+            />
+          <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+      
+        <TextView 
+            android:id="@+id/agent_quyu_sp2"
+            android:layout_width="wrap_content"
+              android:text="筛选"
+            android:padding="10dp"
+             android:textSize="14sp"
+            android:textColor="#333"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            />
+        
+           </RelativeLayout>
+         <Button 
+            android:layout_width="@dimen/fengexian"
+            android:layout_height="match_parent"
+            android:background="#c9c9cb"
+            />
+         
+      
+           <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+            <TextView 
+            android:id="@+id/agent_quyu_sp3"
+            android:layout_width="wrap_content"
+             android:text="排序"
+              android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            />
+               </RelativeLayout>
+    </LinearLayout>
+    
+    <com.dumu.housego.util.MyReboundScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_below="@+id/ll_agent_spinner"
+        >
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           
+             <com.dumu.housego.util.ListViewForScrollView 
+        android:id="@+id/lv_agent_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="#fff"
+        >
+        
+    </com.dumu.housego.util.ListViewForScrollView>
+           
+           
+       </LinearLayout> 
+        
+        
+    </com.dumu.housego.util.MyReboundScrollView>
+    
+    
+
+</RelativeLayout>

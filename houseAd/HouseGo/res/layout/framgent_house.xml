@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ObsoleteLayoutParam,HardcodedText,ButtonStyle,UselessParent" >
+
+    
+    
+    <!-- 普通用户登录 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_putong_house"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/ll_contorl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+  
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tv_look_date"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:text="看房行程"
+                android:background="@drawable/selector_house_date"
+                android:textColor="#EE3A43"
+                android:textSize="14sp" />
+
+            <Button
+                 android:id="@+id/tv_look_histroy"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                 android:background="@drawable/selector_house_histroy"
+                android:text="带看行程"
+                android:textColor="#EE3A43"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+        <Button 
+        android:layout_width="match_parent"
+           android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb"
+        />
+        
+    
+    <com.dumu.housego.util.NoScrollViewPager
+        android:id="@+id/house_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title" >
+        
+    </com.dumu.housego.util.NoScrollViewPager>
+</LinearLayout>
+
+       
+    
+    
+    <!-- 无用户登录 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_noLogin_house"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <LinearLayout
+        android:id="@+id/rl_title1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ee3a43"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+         >
+
+  			<TextView 
+  			    android:layout_width="match_parent"
+  			    android:layout_height="40dp"
+  			    android:text="看房"
+  			    android:textColor="#ffffff"
+  			    android:gravity="center"
+  			    android:textSize="16sp"
+  			    />
+  			<Button
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/nologin_relativeLayout1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" >
+
+        <com.dumu.housego.util.CarouselViewPager
+            android:id="@+id/nologin_mCarouselView"
+            android:layout_width="200dp"
+            android:layout_height="200dp" >
+        </com.dumu.housego.util.CarouselViewPager>
+
+        <!-- 轮播图片的指示点 -->
+
+        <LinearLayout
+            android:id="@+id/nologin_pointLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@+id/nologin_mCarouselView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal" >
+
+         
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_noLogin_house"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="把房子加入带看清单" />
+    
+    <Button
+        android:id="@+id/btn_house_noLogin_Login"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#EE3A43"
+        android:text="去登录"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    
+    </LinearLayout>
+    
+    
+     <!-- 经纪人用户登录 -->
+     
+       <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_agent_house"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+        android:id="@+id/rl_title2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ee3a43"
+        android:orientation="vertical"
+         >
+
+  			<TextView 
+  			    android:layout_width="match_parent"
+  			    android:layout_height="40dp"
+  			    android:text="带看行程"
+  			    android:gravity="center"
+  			    android:textColor="#ffffff"
+  			    android:textSize="16sp"
+  			    />
+  	
+    </LinearLayout>
+    <Button 
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb"
+        />
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#ffffff"
+         
+         >
+  		
+         <ListView 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:scrollbars="none"
+             android:divider="@null"
+             android:id="@+id/lv_agent_kanfang">
+             
+         </ListView>
+         
+         
+        <ImageView
+            android:visibility="gone"
+        android:id="@+id/agent_no_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/usernoinfo" />
+        
+</RelativeLayout>
+
+    </LinearLayout> 
+    
+</RelativeLayout>

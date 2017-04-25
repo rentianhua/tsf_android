@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dumu.housego.SearchActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/btn_cancle_search"
+            android:background="@drawable/btn_submit_shap2"
+            android:hint="小区" />
+
+        <TextView
+            android:id="@+id/btn_sure_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:text="确定"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <Button 
+        
+        android:layout_width="match_parent"
+        android:background="#c9c9cb"
+        android:layout_height="@dimen/fengexian"/>
+    
+	<com.dumu.housego.util.MyReboundScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        >
+	       <com.dumu.housego.util.ListViewForScrollView 
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:background="#fff"
+	           android:id="@+id/listview_search"
+	           ></com.dumu.housego.util.ListViewForScrollView> 
+	        
+	        
+	    </LinearLayout>
+	    
+	    
+	</com.dumu.housego.util.MyReboundScrollView>
+    
+
+</LinearLayout>

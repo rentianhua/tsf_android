@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dumu.housego.util.MyReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,UselessParent,RtlSymmetry,RtlHardcoded,DisableBaselineAlignment,ContentDescription,UseCompoundDrawables" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/first_back"
+            android:orientation="vertical"
+          >
+
+            <TextView
+                android:id="@+id/tv_frist_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:fontFamily="Microsoft YaHei"
+                android:text="聚焦深圳总价300万一下房源"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                   android:id="@+id/tv_second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="Microsoft YaHei"
+                android:text="买房 卖方 找淘深房"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shap_yezhuweituo_3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="深圳"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="@dimen/fengexian"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#CEDDED" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:src="@drawable/search_gray_32x30" />
+
+                <TextView
+                    android:id="@+id/tv_first_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:gravity="center|left"
+                    
+                    android:hint="请输入房名/小区名/地域名"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_ershoufang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/er1"
+                android:gravity="center_horizontal"
+                android:text="二手房"
+                android:textColor="#394043"
+                android:textSize="14sp"
+               />
+
+            <RadioButton
+                android:id="@+id/rb_xinfang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main2"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:text="新房"
+                 android:textColor="#394043"
+               />
+
+            <RadioButton
+                android:id="@+id/rb_zufang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main3"
+                android:gravity="center_horizontal"
+                android:text="租房"
+                 android:textColor="#394043"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_jingjiren"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main4"
+                android:gravity="center_horizontal"
+                android:text="经纪人"
+                 android:textColor="#394043"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_tree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_yezhuweituo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                 android:textColor="#394043"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main5"
+                android:gravity="center_horizontal"
+                android:text="业主委托"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_dazongjiaoyi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                 android:textColor="#394043"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main6"
+                android:gravity="center_horizontal"
+                android:text="大宗交易"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_dituzhaofang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                 android:textColor="#394043"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main7"
+                android:gravity="center_horizontal"
+                android:text="地图找房"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_goufangxuzhi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                 android:textColor="#394043"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/main8"
+                android:gravity="center_horizontal"
+                android:text="购房须知"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/HouseDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fengexian"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#c9c9cb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textColor="#333"
+                android:text="房价行情"
+                android:textSize="18sp" />
+
+          
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/quanshiprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="全市均价" />
+
+            <TextView
+                android:id="@+id/monthnumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="4月成交量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_pricenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="15435"
+                    android:textColor="#DC4B1D"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元/平" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_housenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="15435"
+                    android:textColor="#ff13c953"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="套" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ShopHouseGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fengexian"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#c9c9cb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:text="购房指南"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <com.dumu.housego.util.ListViewForScrollView
+                android:id="@+id/lv_ShopGuide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.dumu.housego.util.ListViewForScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.dumu.housego.util.MyReboundScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5"
+     >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        
+         android:background="@drawable/linearlayout_map_shap"
+        android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.dumu.housego.entity.MyTextView 
+                android:id="@+id/tv_gou_time"
+                android:paddingTop="8dp"
+               android:paddingRight="8dp"
+               android:paddingBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-11-09 10:54:23"
+                  android:textColor="#b1b4b5"
+                />
+            
+            	 <Button 
+            	     android:id="@+id/line"
+            	     android:layout_below="@+id/tv_gou_time"
+               android:layout_width="match_parent"
+               android:background="#c9c9cb"
+               android:layout_marginLeft="8dp"
+               android:layout_marginRight="8dp"
+               android:layout_height="@dimen/fengexian"
+               /> 
+            <com.dumu.housego.entity.MyTextView 
+                android:id="@+id/tv_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b1b4b5"
+                android:text="行政区域 :"
+                />
+            	<com.dumu.housego.entity.MyTextView 
+            	    android:id="@+id/tv_qiugou_area"
+            	    android:layout_alignBaseline="@+id/tv_1"
+            	    android:layout_toRightOf="@+id/tv_1"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textColor="#333"
+                android:text="深圳"
+                /> 
+            
+            	  <com.dumu.housego.entity.MyTextView 
+                android:id="@+id/tv_2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b1b4b5"
+                android:text="联系方式 :"
+                />
+            	<com.dumu.housego.entity.MyTextView 
+            	      android:id="@+id/tv_qiugou_phone"
+            	    android:layout_alignBaseline="@+id/tv_2"
+            	    android:layout_toRightOf="@+id/tv_2"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textColor="#333"
+                android:text="深圳"
+                /> 	 
+                 	  <com.dumu.housego.entity.MyTextView 
+                android:id="@+id/tv_3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b1b4b5"
+                android:text="总价范围 :"
+                android:paddingBottom="10dp"
+                />
+            	<com.dumu.housego.entity.MyTextView 
+            	      android:id="@+id/tv_qiugou_jine"
+            	    android:layout_alignBaseline="@+id/tv_3"
+            	    android:layout_toRightOf="@+id/tv_3"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textColor="#ff0000"
+                android:text="深圳"
+                /> 	
+                
+            	<com.dumu.housego.entity.MyTextView 
+            	    android:layout_alignBaseline="@+id/tv_qiugou_jine"
+            	    android:layout_toRightOf="@+id/tv_qiugou_jine"
+                android:layout_marginLeft="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:textColor="#333"
+                android:text="万"
+                /> 	
+                
+            	<ImageView
+            	    android:layout_marginRight="10dp"
+            	    android:id="@+id/delete"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_alignParentRight="true"
+            	    android:layout_above="@+id/tv_3"
+            	    android:src="@drawable/delete_iv" />
+            	
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

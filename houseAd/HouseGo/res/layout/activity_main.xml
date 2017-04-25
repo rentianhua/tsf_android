@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ObsoleteLayoutParam,ButtonStyle" >
+    
+    
+    
+    
+    
+
+    <RadioGroup
+        android:id="@+id/rg_control"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        
+
+        <RadioButton
+          
+            android:id="@+id/first"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_1"
+            android:gravity="center"
+            android:textColor="#B5B5B5"
+            android:text="首页"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/message"
+            android:textColor="#B5B5B5"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_2"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/house"
+            android:textColor="#B5B5B5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_3"
+            android:gravity="center"
+            android:text="看房"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/my"
+            android:layout_width="0dp"
+            android:textColor="#B5B5B5"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_4"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="我的"
+            android:textSize="14sp" />
+    </RadioGroup>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_mian_message"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/viewpage"
+            android:gravity="center"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+            
+            
+            <Button 
+           android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                 android:background="#00000000"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+              <Button 
+                    android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+                  android:id="@+id/btn_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                 android:background="#00000000"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+              <Button 
+                    android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                 android:background="#00000000"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+            
+             <Button 
+                   android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+             android:background="#00000000"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+            
+            
+        </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_line" >
+    </android.support.v4.view.ViewPager>
+    
+    <Button
+        android:id="@+id/btn_line"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rg_control"
+       android:layout_height="@dimen/fengexian"
+        android:background="#c9c9cb" />
+    
+
+</RelativeLayout>
