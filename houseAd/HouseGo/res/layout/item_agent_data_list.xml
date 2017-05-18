@@ -74,7 +74,7 @@
                 android:paddingBottom="10dp"
                 android:text="客户热评"
                 android:textColor="#f4c600"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:visibility="gone" />
 
             <com.dumu.housego.entity.MyTextView
@@ -150,7 +150,7 @@
                 android:padding="1dp"
                 android:text="房东信赖"
                 android:textColor="#11cd6e"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:visibility="gone" />
 
             <com.dumu.housego.entity.MyTextView
@@ -164,7 +164,7 @@
                 android:padding="1dp"
                 android:text="房东信赖"
                 android:textColor="#ea8010"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:visibility="gone" />
 
             <com.dumu.housego.entity.MyTextView
@@ -179,7 +179,37 @@
                 android:singleLine="true"
                 android:text="房东信赖"
                 android:textColor="#328fca"
-                android:textSize="12sp"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_biaoqian5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_biaoqian4"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tv_agentdata_biaoqian4"
+                android:background="@drawable/shape_textview_biaoqian5"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="房东信赖"
+                android:textColor="#CC6699"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <com.dumu.housego.entity.MyTextView
+                android:id="@+id/tv_agentdata_biaoqian6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_agentdata_biaoqian5"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/tv_agentdata_biaoqian5"
+                android:background="@drawable/shape_textview_biaoqian6"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="房东信赖"
+                android:textColor="#FFB6C1"
+                android:textSize="10sp"
                 android:visibility="gone" />
 
             <ImageView
