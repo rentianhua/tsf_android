@@ -83,6 +83,7 @@ public class ATershousubmitModel implements IATershousubmitModel {
                 map.put("dianti", at.getShifoudianti());
                 map.put("isweiyi", at.getWeiyizhuzhai());
                 map.put("guapaidate", at.getGuapaishijian());
+                map.put("shangcijiaoyi", at.getShangcijiaoyi());
                 map.put("biaoqian", at.getBianqian());
                 map.put("ditiexian", at.getDitieline());
                 map.put("touzifenxi", at.getTouzifenxi());

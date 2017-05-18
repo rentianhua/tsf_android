@@ -133,7 +133,7 @@ public class ATershouSubmitFragment extends Fragment implements
     private LinearLayout ll_back_agentershousubmit;
     private TextView tv_ershou_housearea, tv_ershou_xiaoquname,
             tv_ershou_jingweidu, tv_ershou_louceng, tv_ershou_loucengmenu,
-            tv_ershou_wuyeType, tv_ershou_diyaxinxi, tv_ershou_huType,
+            tv_ershou_wuyeType,tv_ershou_shangcijiaoyi, tv_ershou_diyaxinxi, tv_ershou_huType,
             tv_ershou_houseSX, tv_ershou_jianzhuType, tv_ershou_jianzhuJiegou,
             tv_ershou_tihubili, tv_ershou_houseUse, tv_ershou_chanquansuoshu,
             tv_ershou_SfDianti, tv_ershou_weiyizhuzhai, tv_ershou_guapaitime,
@@ -270,6 +270,7 @@ public class ATershouSubmitFragment extends Fragment implements
         tv_ershou_SfDianti.setText(n.getDianti());
         tv_ershou_weiyizhuzhai.setText(n.getIsweiyi());
         tv_ershou_guapaitime.setText(n.getGuapaidate());
+        tv_ershou_shangcijiaoyi.setText(n.getShangcijiaoyi());
         tv_ershou_biaoqian.setText(n.getBiaoqian());
         tv_ershou_ditieline.setText(n.getDitiexian());
         tv_ershou_biaoti.setText(n.getTitle());
@@ -341,6 +342,8 @@ public class ATershouSubmitFragment extends Fragment implements
                 .findViewById(R.id.tv_ershou_weiyizhuzhai);
         tv_ershou_guapaitime = (TextView) view
                 .findViewById(R.id.tv_ershou_guapaitime);
+        tv_ershou_shangcijiaoyi = (TextView) view
+                .findViewById(R.id.tv_ershou_shangcijiaoyi);
         tv_ershou_biaoqian = (TextView) view
                 .findViewById(R.id.tv_ershou_biaoqian);
         tv_ershou_ditieline = (TextView) view
@@ -561,6 +564,7 @@ public class ATershouSubmitFragment extends Fragment implements
                 at.setShifoudianti(tv_ershou_SfDianti.getText().toString());
                 at.setWeiyizhuzhai(tv_ershou_weiyizhuzhai.getText().toString());
                 at.setGuapaishijian(tv_ershou_guapaitime.getText().toString());
+                at.setShangcijiaoyi(tv_ershou_shangcijiaoyi.getText().toString());
                 at.setBianqian(tv_ershou_biaoqian.getText().toString());
                 at.setDitieline(tv_ershou_ditieline.getText().toString());
                 //
@@ -684,6 +688,13 @@ public class ATershouSubmitFragment extends Fragment implements
             public void onClick(View v) {
                 WheelPickerOne(WheelpickerData.WUYETYPE, tv_ershou_wuyeType,
                         "请选择物业性质");
+            }
+        });
+
+        tv_ershou_shangcijiaoyi.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WheelPickerDate(tv_ershou_shangcijiaoyi, "请选择上次交易时间");
             }
         });
 

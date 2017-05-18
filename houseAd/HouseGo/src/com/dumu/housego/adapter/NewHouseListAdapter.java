@@ -6,6 +6,7 @@ import com.bumptech.glide.Glide;
 import com.dumu.housego.R;
 import com.dumu.housego.entity.MyTextView;
 import com.dumu.housego.entity.NewHouseList;
+import com.dumu.housego.entity.Street;
 import com.dumu.housego.util.UrlFactory;
 
 import android.content.Context;
@@ -56,6 +57,7 @@ public class NewHouseListAdapter extends BaseAdapter {
 			holder.newhouselist_area = (MyTextView) convertView.findViewById(R.id.newhouselist_area);
 			holder.newhouselist_title = (MyTextView) convertView.findViewById(R.id.newhouselist_title);
 			holder.newhouselist_iv = (ImageView) convertView.findViewById(R.id.newhouselist_iv);
+			holder.newhouselist_kaipandate = (MyTextView) convertView.findViewById(R.id.newhouselist_kaipandate);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
@@ -74,7 +76,17 @@ public class NewHouseListAdapter extends BaseAdapter {
 			Glide.with(context).load(url).into(holder.newhouselist_iv);
 		}
 
-		holder.newhouselist_address.setText(n.getLoupandizhi());
+		//holder.newhouselist_address.setText(n.getLoupandizhi());
+		String[] areas= n.getShiarea().split(",");
+		String shi="";
+		if(areas.length>1) {
+			shi = areas[0] + "-" + areas[areas.length - 1];
+		}else
+		{
+			shi = areas[0];
+		}
+
+		holder.newhouselist_address.setText(shi + "室/" + n.getMianjiarea()+ "平米");
 		holder.newhouselist_title.setText(n.getTitle());
 		if(n.getJunjia().equals("0")){
 			holder.newhouselist_price.setText( "未定价");
@@ -83,6 +95,7 @@ public class NewHouseListAdapter extends BaseAdapter {
 		}
 		holder.newhouselist_area.setText(n.getCityname() + " " + n.getAreaname());
 
+		holder.newhouselist_kaipandate.setText("开盘时间：" + n.getKaipandate());
 		return convertView;
 	}
 
@@ -92,7 +105,7 @@ public class NewHouseListAdapter extends BaseAdapter {
 		TextView newhouselist_area;
 		TextView newhouselist_title;
 		ImageView newhouselist_iv;
-
+		TextView newhouselist_kaipandate;
 	}
 
 }

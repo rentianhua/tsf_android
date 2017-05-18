@@ -68,6 +68,7 @@ public class ATerShouSubmit {
     private String idcard;
 
     private String danyuan;
+    private String shangcijiaoyi;
 
     public ATerShouSubmit(String contract, String danyuan,
                           String idcard, String id, String username, String userid, String modelid, String province, String city, String area,
@@ -79,7 +80,7 @@ public class ATerShouSubmit {
                           String touzifenxi, String huxingjieshao, String xiaoqujieshao, String shuifeijiexi, String zhuangxiumiaoshu,
                           String zhoubianpeitao, String jiaoyupeitao, String jiaotongchuxing, String hexinmaidian,
                           String xiaoquyoushi, String quanshudiya, String curceng, String zongceng, String shi,
-                          String ting, String wei, String jiegou, String zhuangxiu, String chaoxiang) {
+                          String ting, String wei, String jiegou, String zhuangxiu, String chaoxiang,String shangcijiaoyi) {
         super();
         this.danyuan = danyuan;
         this.contract = contract;
@@ -137,6 +138,7 @@ public class ATerShouSubmit {
         this.jiegou = jiegou;
         this.zhuangxiu = zhuangxiu;
         this.chaoxiang = chaoxiang;
+        this.shangcijiaoyi = shangcijiaoyi;
     }
 
     public ATerShouSubmit() {
@@ -600,6 +602,14 @@ public class ATerShouSubmit {
         this.chaoxiang = chaoxiang;
     }
 
+    public String getShangcijiaoyi() {
+        return shangcijiaoyi;
+    }
+
+    public void setShangcijiaoyi(String shangcijiaoyi) {
+        this.shangcijiaoyi = shangcijiaoyi;
+    }
+
     @Override
     public String toString() {
         return "ATerShouSubmit [id=" + id + ", username=" + username + ", userid=" + userid + ", modelid=" + modelid
@@ -619,7 +629,7 @@ public class ATerShouSubmit {
                 + ", quanshudiya=" + quanshudiya + ", curceng=" + curceng
                 + ", zongceng=" + zongceng + ", shi=" + shi + ", ting=" + ting + ", wei=" + wei + ", jiegou=" + jiegou
                 + ", zhuangxiu=" + zhuangxiu + ", chaoxiang=" + chaoxiang + ", contract=" + contract + ", idcard="
-                + idcard + ", danyuan=" + danyuan + "]";
+                + idcard + ", danyuan=" + danyuan+ ", shangcijiaoyi=" + shangcijiaoyi + "]";
     }
 
 
