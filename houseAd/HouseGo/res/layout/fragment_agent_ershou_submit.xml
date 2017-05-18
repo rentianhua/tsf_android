@@ -329,12 +329,12 @@
                         android:textSize="14sp" >
                     </EditText>
                 </RelativeLayout>
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
 
                 <Button
                     android:layout_width="match_parent"
@@ -637,6 +637,42 @@
                 <Button
                     android:layout_width="match_parent"
                   android:layout_height="@dimen/fengexian"
+                    android:background="#c9c9cb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/shangcijiaoyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="上次交易:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ershou_shangcijiaoyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBaseline="@+id/shangcijiaoyi"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/shangcijiaoyi"
+                        android:background="#ffffff"
+                        android:gravity="right|center_vertical"
+                        android:text=""
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fengexian"
                     android:background="#c9c9cb" />
 
                 <RelativeLayout

@@ -45,23 +45,34 @@
         android:id="@+id/newhouselist_area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/newhouselist_address"
-        android:layout_below="@+id/newhouselist_price"
-        android:layout_marginTop="3dp"
-          android:textColor="#7C7B76"
+        android:textColor="#7C7B76"
         android:text="深圳 宝安区 石岩"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/newhouselist_address"
+        android:layout_alignStart="@+id/newhouselist_address" />
 
     <com.dumu.housego.entity.MyTextView
         android:id="@+id/newhouselist_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         android:layout_below="@+id/newhouselist_address"
         android:text="14500元/㎡"
         android:textColor="#ff0000"
         android:textSize="14sp" />
-</RelativeLayout>
+
+        <com.dumu.housego.entity.MyTextView
+            android:id="@+id/newhouselist_kaipandate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="开盘时间: 2017-12-12"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/newhouselist_area"
+            android:layout_alignStart="@+id/newhouselist_area" />
+
+    </RelativeLayout>
 </RelativeLayout>
