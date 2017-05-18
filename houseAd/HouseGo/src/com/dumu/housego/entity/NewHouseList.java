@@ -11,9 +11,12 @@ public class NewHouseList {
 	private String cityname;
 	private String areaname;
 	private String zonghe;
+	private String kaipandate;
+	private String shiarea;
+	private String mianjiarea;
 	
 	public NewHouseList(String zonghe,String id, String catid, String typeid, String title, String thumb, String loupandizhi,
-			String junjia, String cityname, String areaname) {
+			String junjia, String cityname, String areaname,String kaipandate,String shiarea,String mianjiarea) {
 		super();
 		this.zonghe=zonghe;
 		this.id = id;
@@ -25,6 +28,9 @@ public class NewHouseList {
 		this.junjia = junjia;
 		this.cityname = cityname;
 		this.areaname = areaname;
+		this.kaipandate = kaipandate;
+		this.shiarea = shiarea;
+		this.mianjiarea = mianjiarea;
 	}
 
 	public NewHouseList() {
@@ -113,11 +119,36 @@ public class NewHouseList {
 		this.areaname = areaname;
 	}
 
+	public String getKaipandate() {
+		return kaipandate;
+	}
+
+	public void setKaipandate(String kaipandate) {
+		this.kaipandate = kaipandate;
+	}
+
+	public String getShiarea() {
+		return shiarea;
+	}
+
+	public void setShiarea(String shiarea) {
+		this.shiarea = shiarea;
+	}
+
+	public String getMianjiarea() {
+		return mianjiarea;
+	}
+
+	public void setMianjiarea(String mianjiarea) {
+		this.mianjiarea = mianjiarea;
+	}
+
 	@Override
 	public String toString() {
 		return "NewHouseList [id=" + id + ", catid=" + catid + ", typeid=" + typeid + ", title=" + title + ", thumb="
 				+ thumb + ", loupandizhi=" + loupandizhi + ", junjia=" + junjia + ", cityname=" + cityname
-				+ ", areaname=" + areaname + ", zonghe=" + zonghe + "]";
+				+ ", areaname=" + areaname + ", zonghe=" + zonghe + ", kaipandate=" + kaipandate + ", shiarea=" + shiarea
+				+ ", mianjiarea=" + mianjiarea+ "]";
 	}
 
 }

@@ -27,6 +27,9 @@ public class NewHouseListJSONParse {
 			n.setLoupandizhi(obj.getString("loupandizhi"));
 			n.setTypeid(obj.getString("typeid"));
 			n.setZonghe(obj.getString("zonghe"));
+			n.setKaipandate(obj.getString("kaipandate"));
+			n.setShiarea(obj.getString("shiarea"));
+			n.setMianjiarea(obj.getString("mianjiarea"));
 			newhouselists.add(n);
 		}
 		return newhouselists;
