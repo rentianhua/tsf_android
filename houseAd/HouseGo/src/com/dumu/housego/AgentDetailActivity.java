@@ -84,7 +84,7 @@ public class AgentDetailActivity extends BaseActivity implements IAgentDetailVie
 	private IAgentDetailPresenter presenter;
 	
 	private ImageView circleImageView1;
-	private TextView tv_agent_name,tv_agent_dengji,tv_agent_mainarea,tv_agent_vtel,tv_agent_biaoqian,tv_agent_biaoqian2,tv_agent_biaoqian3,tv_agent_biaoqian4
+	private TextView tv_agent_name,tv_agent_dengji,tv_agent_mainarea,tv_agent_vtel,tv_agent_biaoqian,tv_agent_biaoqian2,tv_agent_biaoqian3,tv_agent_biaoqian4,tv_agent_biaoqian5,tv_agent_biaoqian6
 	,tv_agent_worktime,tv_agent_mianarea2,tv_agent_company,tv_agent_history,tv_agent_pingjunzhouqi,tv_agent_sanshiday;
 	private ImageView imageView2;
 	private LinearLayout pinglun_youshuju,pinglun_wushuju,chengjiaofangyuan_youshuju,chengjiaofangyuan_wushuju,ershoufangyuan_youshuju,ershgoufangyuan_wushuju;
@@ -134,6 +134,8 @@ public class AgentDetailActivity extends BaseActivity implements IAgentDetailVie
 		tv_agent_biaoqian2=(TextView) findViewById(R.id.tv_agent_biaoqian2);
 		tv_agent_biaoqian3=(TextView) findViewById(R.id.tv_agent_biaoqian3);
 		tv_agent_biaoqian4=(TextView) findViewById(R.id.tv_agent_biaoqian4);
+		tv_agent_biaoqian5=(TextView) findViewById(R.id.tv_agent_biaoqian5);
+		tv_agent_biaoqian6=(TextView) findViewById(R.id.tv_agent_biaoqian6);
 		tv_agent_company=(TextView) findViewById(R.id.tv_agent_company);
 		tv_agent_dengji=(TextView) findViewById(R.id.tv_agent_dengji);
 		tv_agent_mainarea=(TextView) findViewById(R.id.tv_agent_mainarea);
@@ -280,21 +282,23 @@ public class AgentDetailActivity extends BaseActivity implements IAgentDetailVie
 		if(!e.getBiaoqian().equals("")){
 			String[] b=e.getBiaoqian().split(",");
 			int l=b.length;
+			tv_agent_biaoqian.setVisibility(View.GONE);
+			tv_agent_biaoqian2.setVisibility(View.GONE);
+			tv_agent_biaoqian3.setVisibility(View.GONE);
+			tv_agent_biaoqian4.setVisibility(View.GONE);
+			tv_agent_biaoqian5.setVisibility(View.GONE);
+			tv_agent_biaoqian6.setVisibility(View.GONE);
+
 			switch (l) {
 			case 1:
 				tv_agent_biaoqian.setText(b[0]);
 				tv_agent_biaoqian.setVisibility(View.VISIBLE);
-				tv_agent_biaoqian2.setVisibility(View.GONE);
-				tv_agent_biaoqian3.setVisibility(View.GONE);
-				tv_agent_biaoqian4.setVisibility(View.GONE);
 				break;
 			case 2:
 				tv_agent_biaoqian.setText(b[0]);
 				tv_agent_biaoqian2.setText(b[1]);
 				tv_agent_biaoqian.setVisibility(View.VISIBLE);
 				tv_agent_biaoqian2.setVisibility(View.VISIBLE);
-				tv_agent_biaoqian3.setVisibility(View.GONE);
-				tv_agent_biaoqian4.setVisibility(View.GONE);
 				break;
 			case 3:
 				tv_agent_biaoqian.setText(b[0]);
@@ -303,7 +307,6 @@ public class AgentDetailActivity extends BaseActivity implements IAgentDetailVie
 				tv_agent_biaoqian.setVisibility(View.VISIBLE);
 				tv_agent_biaoqian2.setVisibility(View.VISIBLE);
 				tv_agent_biaoqian3.setVisibility(View.VISIBLE);
-				tv_agent_biaoqian4.setVisibility(View.GONE);
 				break;
 			case 4:
 				tv_agent_biaoqian.setText(b[0]);
@@ -315,12 +318,41 @@ public class AgentDetailActivity extends BaseActivity implements IAgentDetailVie
 				tv_agent_biaoqian2.setVisibility(View.VISIBLE);
 				tv_agent_biaoqian4.setVisibility(View.VISIBLE);
 				break;
+			case 5:
+				tv_agent_biaoqian.setText(b[0]);
+				tv_agent_biaoqian2.setText(b[1]);
+				tv_agent_biaoqian3.setText(b[2]);
+				tv_agent_biaoqian4.setText(b[3]);
+				tv_agent_biaoqian5.setText(b[4]);
+				tv_agent_biaoqian.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian3.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian2.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian4.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian5.setVisibility(View.VISIBLE);
+				break;
+			case 6:
+				tv_agent_biaoqian.setText(b[0]);
+				tv_agent_biaoqian2.setText(b[1]);
+				tv_agent_biaoqian3.setText(b[2]);
+				tv_agent_biaoqian4.setText(b[3]);
+				tv_agent_biaoqian5.setText(b[4]);
+				tv_agent_biaoqian6.setText(b[5]);
+
+				tv_agent_biaoqian.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian2.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian3.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian4.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian5.setVisibility(View.VISIBLE);
+				tv_agent_biaoqian6.setVisibility(View.VISIBLE);
+				break;
 			}
 		}else{
 			tv_agent_biaoqian.setVisibility(View.GONE);
-			tv_agent_biaoqian3.setVisibility(View.GONE);
 			tv_agent_biaoqian2.setVisibility(View.GONE);
+			tv_agent_biaoqian3.setVisibility(View.GONE);
 			tv_agent_biaoqian4.setVisibility(View.GONE);
+			tv_agent_biaoqian5.setVisibility(View.GONE);
+			tv_agent_biaoqian6.setVisibility(View.GONE);
 		}
 		//等级
 		String dengji="";

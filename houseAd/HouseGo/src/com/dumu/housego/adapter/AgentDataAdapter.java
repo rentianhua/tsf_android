@@ -65,6 +65,8 @@ public class AgentDataAdapter extends BaseAdapter {
             holder.tvAgentdataBiaoqian2 = (MyTextView) convertView.findViewById(R.id.tv_agentdata_biaoqian2);
             holder.tvAgentdataBiaoqian3 = (MyTextView) convertView.findViewById(R.id.tv_agentdata_biaoqian3);
             holder.tvAgentdataBiaoqian4 = (MyTextView) convertView.findViewById(R.id.tv_agentdata_biaoqian4);
+            holder.tvAgentdataBiaoqian5 = (MyTextView) convertView.findViewById(R.id.tv_agentdata_biaoqian5);
+            holder.tvAgentdataBiaoqian6 = (MyTextView) convertView.findViewById(R.id.tv_agentdata_biaoqian6);
             holder.tvAgentdataLevel = (MyTextView) convertView.findViewById(R.id.tv_agentdata_level);
             holder.tvAgentdataMainarea = (MyTextView) convertView.findViewById(R.id.tv_agentdata_mainarea);
             holder.tvAgentdataName = (MyTextView) convertView.findViewById(R.id.tv_agentdata_name);
@@ -89,21 +91,24 @@ public class AgentDataAdapter extends BaseAdapter {
         if (!n.getBiaoqian().equals("")) {
             String[] b = n.getBiaoqian().split(",");
             int l = b.length;
+
+            holder.tvAgentdataBiaoqian.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian2.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian3.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian4.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian5.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian6.setVisibility(View.GONE);
+
             switch (l) {
                 case 1:
                     holder.tvAgentdataBiaoqian.setText(b[0]);
                     holder.tvAgentdataBiaoqian.setVisibility(View.VISIBLE);
-                    holder.tvAgentdataBiaoqian2.setVisibility(View.GONE);
-                    holder.tvAgentdataBiaoqian3.setVisibility(View.GONE);
-                    holder.tvAgentdataBiaoqian4.setVisibility(View.GONE);
                     break;
                 case 2:
                     holder.tvAgentdataBiaoqian.setText(b[0]);
                     holder.tvAgentdataBiaoqian2.setText(b[1]);
                     holder.tvAgentdataBiaoqian.setVisibility(View.VISIBLE);
                     holder.tvAgentdataBiaoqian2.setVisibility(View.VISIBLE);
-                    holder.tvAgentdataBiaoqian3.setVisibility(View.GONE);
-                    holder.tvAgentdataBiaoqian4.setVisibility(View.GONE);
                     break;
                 case 3:
                     holder.tvAgentdataBiaoqian.setText(b[0]);
@@ -112,7 +117,6 @@ public class AgentDataAdapter extends BaseAdapter {
                     holder.tvAgentdataBiaoqian.setVisibility(View.VISIBLE);
                     holder.tvAgentdataBiaoqian2.setVisibility(View.VISIBLE);
                     holder.tvAgentdataBiaoqian3.setVisibility(View.VISIBLE);
-                    holder.tvAgentdataBiaoqian4.setVisibility(View.GONE);
                     break;
                 case 4:
                     holder.tvAgentdataBiaoqian.setText(b[0]);
@@ -124,12 +128,40 @@ public class AgentDataAdapter extends BaseAdapter {
                     holder.tvAgentdataBiaoqian2.setVisibility(View.VISIBLE);
                     holder.tvAgentdataBiaoqian4.setVisibility(View.VISIBLE);
                     break;
+                case 5:
+                    holder.tvAgentdataBiaoqian.setText(b[0]);
+                    holder.tvAgentdataBiaoqian2.setText(b[1]);
+                    holder.tvAgentdataBiaoqian3.setText(b[2]);
+                    holder.tvAgentdataBiaoqian4.setText(b[3]);
+                    holder.tvAgentdataBiaoqian5.setText(b[4]);
+                    holder.tvAgentdataBiaoqian.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian3.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian2.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian4.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian5.setVisibility(View.VISIBLE);
+                    break;
+                case 6:
+                    holder.tvAgentdataBiaoqian.setText(b[0]);
+                    holder.tvAgentdataBiaoqian2.setText(b[1]);
+                    holder.tvAgentdataBiaoqian3.setText(b[2]);
+                    holder.tvAgentdataBiaoqian4.setText(b[3]);
+                    holder.tvAgentdataBiaoqian5.setText(b[3]);
+                    holder.tvAgentdataBiaoqian6.setText(b[3]);
+                    holder.tvAgentdataBiaoqian.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian3.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian2.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian4.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian5.setVisibility(View.VISIBLE);
+                    holder.tvAgentdataBiaoqian6.setVisibility(View.VISIBLE);
+                    break;
             }
         } else {
             holder.tvAgentdataBiaoqian.setVisibility(View.GONE);
-            holder.tvAgentdataBiaoqian3.setVisibility(View.GONE);
             holder.tvAgentdataBiaoqian2.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian3.setVisibility(View.GONE);
             holder.tvAgentdataBiaoqian4.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian5.setVisibility(View.GONE);
+            holder.tvAgentdataBiaoqian6.setVisibility(View.GONE);
         }
 
 
@@ -204,6 +236,8 @@ public class AgentDataAdapter extends BaseAdapter {
         TextView tvAgentdataBiaoqian2;
         TextView tvAgentdataBiaoqian3;
         TextView tvAgentdataBiaoqian4;
+        TextView tvAgentdataBiaoqian5;
+        TextView tvAgentdataBiaoqian6;
         TextView tvAgentdataPhone1;
         TextView tvAgentdataMainarea;
         TextView tvAgentdataLevel;
