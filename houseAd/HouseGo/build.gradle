@@ -38,6 +38,15 @@ android {
         exclude 'META-INF/LGPL2.1'
     }
 
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a'
+            universalApk true
+        }
+    }
+
     lintOptions {
         checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
