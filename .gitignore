@@ -38,3 +38,7 @@ captures/
 
 # Keystore files
 *.jks
+
+houseAd/.idea/workspace.xml
+
+houseAd/.idea/misc.xml

@@ -122,7 +122,7 @@ public class NewHouseDetailActivity extends BaseActivity implements IPaySuccessV
     private ListViewForScrollView lvLoupanDongtai, lv_new_tuijian;
     private TextView tvNoDongTai;
 
-    private TextView tv_yhq_none, tv_new_yhq_1, tv_new_yhq_2, tv_new_yhq_3;
+    private TextView tv_yhq_none, tv_new_yhq_1, tv_new_yhq_2, tv_new_yhq_3,tv_new_yhq_4,tv_new_yhq_5;
     private RelativeLayout rl_new_yhq;
     @ViewInject(R.id.ll_new_house_detail_back)
     LinearLayout llNewHouseDetailBack;
@@ -308,6 +308,8 @@ public class NewHouseDetailActivity extends BaseActivity implements IPaySuccessV
     private String coupon_id1;
     private String coupon_id2;
     private String coupon_id3;
+    private String coupon_id4;
+    private String coupon_id5;
     private UserInfo userinfo;
     private IPaySuccessPresenter paypresenter;
     private LinearLayout llpopupSpinnerMore;
@@ -426,6 +428,8 @@ public class NewHouseDetailActivity extends BaseActivity implements IPaySuccessV
         tv_new_yhq_1 = (TextView) findViewById(R.id.tv_new_yhq_1);
         tv_new_yhq_2 = (TextView) findViewById(R.id.tv_new_yhq_2);
         tv_new_yhq_3 = (TextView) findViewById(R.id.tv_new_yhq_3);
+        tv_new_yhq_4 = (TextView) findViewById(R.id.tv_new_yhq_4);
+        tv_new_yhq_5 = (TextView) findViewById(R.id.tv_new_yhq_5);
         mSlider = (AutoLoopLayout<Pics>) findViewById(R.id.slider);
 
         mMapView = (MapView) findViewById(R.id.new_bmapView);
@@ -1047,6 +1051,44 @@ public class NewHouseDetailActivity extends BaseActivity implements IPaySuccessV
                 }
             }
         });
+        tv_new_yhq_4.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coupon_id = coupon_id4;
+                if (userinfo == null) {
+                    MyToastShowCenter.CenterToast(getApplicationContext(), "你还没有登录，请先登录");
+                    startActivity(new Intent(NewHouseDetailActivity.this, LoginActivity.class));
+                } else {
+                    if (tv_yhqDes != null) {
+                        if (yhqs != null && yhqs.size() >= 3) {
+                            tv_yhqDes.setText("使用说明：" + yhqs.get(2).getDescription());
+                        } else {
+                            tv_yhqDes.setText("使用说明：");
+                        }
+                    }
+                    Mpop.showAtLocation(v, Gravity.CENTER, 0, 0);
+                }
+            }
+        });
+        tv_new_yhq_5.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coupon_id = coupon_id5;
+                if (userinfo == null) {
+                    MyToastShowCenter.CenterToast(getApplicationContext(), "你还没有登录，请先登录");
+                    startActivity(new Intent(NewHouseDetailActivity.this, LoginActivity.class));
+                } else {
+                    if (tv_yhqDes != null) {
+                        if (yhqs != null && yhqs.size() >= 3) {
+                            tv_yhqDes.setText("使用说明：" + yhqs.get(2).getDescription());
+                        } else {
+                            tv_yhqDes.setText("使用说明：");
+                        }
+                    }
+                    Mpop.showAtLocation(v, Gravity.CENTER, 0, 0);
+                }
+            }
+        });
     }
 
     public void showNewHouseDetailData(NewHouseDetail news) {
@@ -1062,51 +1104,50 @@ public class NewHouseDetailActivity extends BaseActivity implements IPaySuccessV
             rl_new_yhq.setVisibility(View.VISIBLE);
             tv_yhq_none.setVisibility(View.GONE);
 
-            switch (yhqs.size()) {
-                case 1: {
-                    tv_new_yhq_1.setVisibility(View.VISIBLE);
-                    tv_new_yhq_2.setVisibility(View.GONE);
-                    tv_new_yhq_3.setVisibility(View.GONE);
+            tv_new_yhq_1.setVisibility(View.GONE);
+            tv_new_yhq_2.setVisibility(View.GONE);
+            tv_new_yhq_3.setVisibility(View.GONE);
+            tv_new_yhq_4.setVisibility(View.GONE);
+            tv_new_yhq_5.setVisibility(View.GONE);
 
-                    YHQinfo y = yhqs.get(0);
-                    this.coupon_id1 = y.getId();
-                    tv_new_yhq_1.setText(y.getTitle());
-                }
-                break;
-                case 2: {
-                    tv_new_yhq_1.setVisibility(View.VISIBLE);
-                    tv_new_yhq_2.setVisibility(View.VISIBLE);
-                    tv_new_yhq_3.setVisibility(View.GONE);
+            if(yhqs.size()>=1)
+            {
+                tv_new_yhq_1.setVisibility(View.VISIBLE);
 
-                    YHQinfo y1 = yhqs.get(0);
-                    this.coupon_id1 = y1.getId();
-                    tv_new_yhq_1.setText(y1.getTitle());
+                YHQinfo y = yhqs.get(0);
+                this.coupon_id1 = y.getId();
+                tv_new_yhq_1.setText(y.getTitle());
+            }
 
-                    YHQinfo y2 = yhqs.get(1);
-                    this.coupon_id2 = y2.getId();
-                    tv_new_yhq_2.setText(y2.getTitle());
-                }
-                break;
-                case 3: {
-                    tv_new_yhq_1.setVisibility(View.VISIBLE);
-                    tv_new_yhq_2.setVisibility(View.VISIBLE);
-                    tv_new_yhq_3.setVisibility(View.VISIBLE);
+            if(yhqs.size()>=2)
+            {
+                tv_new_yhq_2.setVisibility(View.VISIBLE);
 
-                    YHQinfo y1 = yhqs.get(0);
-                    this.coupon_id1 = y1.getId();
-                    tv_new_yhq_1.setText(y1.getTitle());
+                YHQinfo y2 = yhqs.get(1);
+                this.coupon_id2 = y2.getId();
+                tv_new_yhq_2.setText(y2.getTitle());
+            }
+            if(yhqs.size()>=3)
+            {
+                tv_new_yhq_3.setVisibility(View.VISIBLE);
+                YHQinfo y3 = yhqs.get(2);
+                this.coupon_id3 = y3.getId();
+                tv_new_yhq_3.setText(y3.getTitle());
+            }
 
-                    YHQinfo y2 = yhqs.get(1);
-                    this.coupon_id2 = y2.getId();
-                    tv_new_yhq_2.setText(y2.getTitle());
-
-                    YHQinfo y3 = yhqs.get(2);
-                    this.coupon_id3 = y3.getId();
-                    tv_new_yhq_3.setText(y3.getTitle());
-                }
-                break;
-                default:
-                    break;
+            if(yhqs.size()>=4)
+            {
+                tv_new_yhq_4.setVisibility(View.VISIBLE);
+                YHQinfo y4 = yhqs.get(3);
+                this.coupon_id4 = y4.getId();
+                tv_new_yhq_4.setText(y4.getTitle());
+            }
+            if(yhqs.size()>=5)
+            {
+                tv_new_yhq_5.setVisibility(View.VISIBLE);
+                YHQinfo y5 = yhqs.get(4);
+                this.coupon_id5 = y5.getId();
+                tv_new_yhq_5.setText(y5.getTitle());
             }
         } else {
             rl_new_yhq.setVisibility(View.GONE);

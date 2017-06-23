@@ -351,6 +351,31 @@
                         android:gravity="center"
                         android:text="5万抵8万"
                         android:textColor="#ffffff" />
+                    <TextView
+                        android:id="@+id/tv_new_yhq_4"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/tv_new_yhq_3"
+                        android:layout_alignLeft="@+id/tv_new_yhq_2"
+                        android:layout_below="@+id/tv_new_yhq_2"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#e12442"
+                        android:gravity="center"
+                        android:text="5万抵8万"
+                        android:textColor="#ffffff" />
+                    <TextView
+                        android:id="@+id/tv_new_yhq_5"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_alignLeft="@+id/tv_new_yhq_3"
+                        android:layout_below="@+id/tv_new_yhq_3"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#e12442"
+                        android:gravity="center"
+                        android:text="5万抵8万"
+                        android:textColor="#ffffff" />
                 </RelativeLayout>
             </RelativeLayout>
 
